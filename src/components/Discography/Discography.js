@@ -56,7 +56,18 @@ const Discography = () => {
               <iframe
                 title="Spotify"
                 style={{ borderRadius: "10px", margin: "0px 10px" }}
-                src="https://open.spotify.com/embed/album/4lqu02Opk6iEkJlSQlRSgh?utm_source=generator"
+                src="https://open.spotify.com/embed/album/4p93zaXPeRj2G6ZZEKh6Ki?utm_source=generator"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
+                title="Spotify"
+                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                src="https://open.spotify.com/embed/album/1FBkFfyGX8KWuwU0wgU0f3?utm_source=generator"
                 width="95%"
                 height="352"
                 frameBorder="0"
