@@ -1,12 +1,12 @@
 import { makeStyles } from "@mui/styles";
-import martin1 from "../../images/compressed/martin1.jpg";
+import joan5 from "../../images/joan5.jpg";
 
 export default makeStyles((theme) => ({
   container: {
-    backgroundImage: `url(${martin1})`,
+    backgroundImage: `url(${joan5})`,
     backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+    backgroundRepeat: "repeat",
     height: "100vh",
     [theme.breakpoints.down("sm")]: {
       backgroundPosition: "80%",

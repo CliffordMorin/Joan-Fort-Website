@@ -1,12 +1,12 @@
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 const colorPalette = {
-  cafeNoir: "#583923ff",
-  licorice: "#160d09ff",
-  timberWolf: "#d8cdcfff",
-  cafeNoir2: "#49301dff",
-  buff: "#dea284ff",
-  buffLight: "#f7e6daff",
+  cafeNoir: "#16203b",
+  bgDark: "#160d09ff",
+  timberWolf: "#d6e5e3",
+  cafeNoir2: "#9fd8cb",
+  textDark: "#11255d",
+  textLight: "#d6e5e3",
 };
 
 let fonts = {
@@ -28,11 +28,11 @@ let theme = createTheme({
       main: colorPalette.cafeNoir2,
     },
     secondary: {
-      main: colorPalette.buff,
-      light: colorPalette.buffLight,
+      main: colorPalette.textDark,
+      light: colorPalette.textLight,
     },
     background: {
-      paper: colorPalette.licorice,
+      paper: colorPalette.bgDark,
       default: colorPalette.cafeNoir,
     },
   },
