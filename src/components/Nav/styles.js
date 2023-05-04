@@ -7,4 +7,16 @@ export default makeStyles((theme) => ({
       color: theme.palette.text.black,
     },
   },
+  navLinkTextMobile: {
+    color: theme.palette.text.colorful,
+    "&:hover": {
+      color: theme.palette.text.black,
+    },
+  },
+  navLinkTextActiveDesktop: {
+    color: theme.palette.text.colorful,
+    "&:hover": {
+      color: theme.palette.text.black,
+    },
+  },
 }));

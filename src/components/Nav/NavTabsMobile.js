@@ -8,7 +8,6 @@ import {
   MenuItem,
   Box,
   IconButton,
-  useTheme,
 } from "@mui/material";
 import navLinks from "./navLinks";
 import useStyles from "./styles";
@@ -20,7 +19,6 @@ const NavTabsDesktop = () => {
   const aboutRef = useRef(null);
   const mediaRef = useRef(null);
   const classes = useStyles();
-  const theme = useTheme();
 
   const handleAboutMenuOpen = () => {
     setAboutMenuOpen(true);
@@ -99,7 +97,10 @@ const NavTabsDesktop = () => {
                     }
                   }}
                 >
-                  <Typography className={classes.navLinkText} variant="h7">
+                  <Typography
+                    className={classes.navLinkTextMobile}
+                    variant="h7"
+                  >
                     {item.page}
                   </Typography>
                 </Button>
@@ -138,7 +139,7 @@ const NavTabsDesktop = () => {
                           }}
                         >
                           <Typography
-                            className={classes.navLinkText}
+                            className={classes.navLinkTextMobile}
                             variant="h7"
                           >
                             {childItem.page}
@@ -186,7 +187,7 @@ const NavTabsDesktop = () => {
                             }}
                           >
                             <Typography
-                              className={classes.navLinkText}
+                              className={classes.navLinkTextMobile}
                               variant="h7"
                             >
                               {childItem.page}
@@ -210,7 +211,7 @@ const NavTabsDesktop = () => {
                             }}
                           >
                             <Typography
-                              className={classes.navLinkText}
+                              className={classes.navLinkTextMobile}
                               variant="h7"
                             >
                               {childItem.page}
@@ -238,7 +239,10 @@ const NavTabsDesktop = () => {
                   }}
                   onClick={handleMenuClose}
                 >
-                  <Typography className={classes.navLinkText} variant="h7">
+                  <Typography
+                    className={classes.navLinkTextMobile}
+                    variant="h7"
+                  >
                     {item.page}
                   </Typography>
                 </Button>

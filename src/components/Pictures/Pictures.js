@@ -54,13 +54,17 @@ const Pictures = () => {
         <meta name="description" content="Pictures of Joan Fort" />
         <link rel="canonical" href="/pictures" />
       </Helmet>
-      <Typography align="center" variant="h2" sx={{ pt: 5, pb: 2 }}>
+      <Typography
+        align="center"
+        variant="h2"
+        sx={{ pt: 5, pb: 2, color: theme.palette.text.colorful }}
+      >
         <Bounce>PICTURES</Bounce>
       </Typography>
       <Divider
         sx={{
           zIndex: "100",
-          backgroundColor: theme.palette.text.primary,
+          backgroundColor: theme.palette.text.colorful,
           height: "2px",
           width: "100px",
           margin: "auto",

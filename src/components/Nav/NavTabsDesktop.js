@@ -57,7 +57,7 @@ const NavTabsDesktop = () => {
                   }
                 }}
               >
-                <Typography className={classes.navLinkText} variant="h6">
+                <Typography className={classes.navLinkTextDesktop} variant="h6">
                   {item.page}
                 </Typography>
               </Button>
@@ -80,9 +80,14 @@ const NavTabsDesktop = () => {
                     >
                       <MenuItem
                         onClick={handleAboutMenuClose}
-                        className={classes.navLinkText}
+                        className={classes.navLinkTextDesktop}
                       >
-                        {childItem.page}
+                        <Typography
+                          className={classes.navLinkTextActiveDesktop}
+                          variant="h7"
+                        >
+                          {childItem.page}
+                        </Typography>
                       </MenuItem>
                     </Link>
                   ))}
@@ -111,9 +116,14 @@ const NavTabsDesktop = () => {
                       >
                         <MenuItem
                           onClick={handleAboutMenuClose}
-                          className={classes.navLinkText}
+                          className={classes.navLinkTextDesktop}
                         >
-                          {childItem.page}
+                          <Typography
+                            className={classes.navLinkTextActiveDesktop}
+                            variant="h7"
+                          >
+                            {childItem.page}
+                          </Typography>
                         </MenuItem>
                       </a>
                     ) : (
@@ -128,9 +138,14 @@ const NavTabsDesktop = () => {
                       >
                         <MenuItem
                           onClick={handleAboutMenuClose}
-                          className={classes.navLinkText}
+                          className={classes.navLinkTextDesktop}
                         >
-                          {childItem.page}
+                          <Typography
+                            className={classes.navLinkTextActiveDesktop}
+                            variant="h7"
+                          >
+                            {childItem.page}
+                          </Typography>
                         </MenuItem>
                       </Link>
                     )
@@ -153,7 +168,7 @@ const NavTabsDesktop = () => {
                   display: "block",
                 }}
               >
-                <Typography className={classes.navLinkText} variant="h6">
+                <Typography className={classes.navLinkTextDesktop} variant="h6">
                   {item.page}
                 </Typography>
               </Button>
