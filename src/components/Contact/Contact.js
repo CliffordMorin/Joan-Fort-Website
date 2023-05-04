@@ -29,7 +29,7 @@ const Contact = () => {
         <Divider
           sx={{
             zIndex: "100",
-            backgroundColor: theme.palette.text.primary,
+            backgroundColor: theme.palette.text.colorful,
             height: "2px",
             width: "100px",
             margin: "auto",

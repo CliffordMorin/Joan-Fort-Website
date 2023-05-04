@@ -4,7 +4,7 @@ const colorPalette = {
   cafeNoir: "#16203b",
   bgDark: "#160d09ff",
   timberWolf: "#d6e5e3",
-  cafeNoir2: "#9fd8cb",
+  tiffanyBlue: "#9fd8cb",
   textDark: "#11255d",
   textLight: "#d6e5e3",
 };
@@ -21,11 +21,12 @@ let fonts = {
 let theme = createTheme({
   palette: {
     text: {
-      primary: colorPalette.timberWolf,
-      default: colorPalette.timberWolf,
+      light: colorPalette.textLight,
+      dark: colorPalette.textDark,
+      colorful: colorPalette.tiffanyBlue,
     },
     primary: {
-      main: colorPalette.cafeNoir2,
+      main: colorPalette.tiffanyBlue,
     },
     secondary: {
       main: colorPalette.textDark,
