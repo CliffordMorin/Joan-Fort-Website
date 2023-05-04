@@ -8,6 +8,7 @@ import {
   MenuItem,
   Box,
   IconButton,
+  useTheme,
 } from "@mui/material";
 import navLinks from "./navLinks";
 import useStyles from "./styles";
@@ -19,6 +20,7 @@ const NavTabsDesktop = () => {
   const aboutRef = useRef(null);
   const mediaRef = useRef(null);
   const classes = useStyles();
+  const theme = useTheme();
 
   const handleAboutMenuOpen = () => {
     setAboutMenuOpen(true);
@@ -135,7 +137,12 @@ const NavTabsDesktop = () => {
                             handleMenuClose();
                           }}
                         >
-                          {childItem.page}
+                          <Typography
+                            className={classes.navLinkText}
+                            variant="h7"
+                          >
+                            {childItem.page}
+                          </Typography>
                         </MenuItem>
                       </Link>
                     ))}
@@ -178,7 +185,12 @@ const NavTabsDesktop = () => {
                               handleMenuClose();
                             }}
                           >
-                            {childItem.page}
+                            <Typography
+                              className={classes.navLinkText}
+                              variant="h7"
+                            >
+                              {childItem.page}
+                            </Typography>
                           </MenuItem>
                         </a>
                       ) : (
@@ -197,7 +209,12 @@ const NavTabsDesktop = () => {
                               handleMenuClose();
                             }}
                           >
-                            {childItem.page}
+                            <Typography
+                              className={classes.navLinkText}
+                              variant="h7"
+                            >
+                              {childItem.page}
+                            </Typography>
                           </MenuItem>
                         </Link>
                       )

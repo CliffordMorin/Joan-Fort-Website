@@ -4,12 +4,13 @@ import joan5 from "../../images/joan5.jpg";
 export default makeStyles((theme) => ({
   container: {
     backgroundImage: `url(${joan5})`,
-    backgroundPosition: "center",
+    backgroundPosition: "50% 10%",
     backgroundSize: "cover",
     backgroundRepeat: "repeat",
     height: "100vh",
+
     [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "80%",
+      backgroundPosition: "50%",
     },
   },
   link: {
@@ -20,19 +21,29 @@ export default makeStyles((theme) => ({
       color: theme.palette.secondary.light,
     },
   },
+  divider: {
+    backgroundColor: theme.palette.text.dark,
+    width: "20%",
+    height: "2px",
+    margin: "20px auto",
+    display: "block",
+    [theme.breakpoints.down("sm")]: {
+      width: "40%",
+      ml: 0,
+    },
+  },
   textContainer: {
-    paddingTop: "15%",
+    paddingTop: "4%",
+    paddingLeft: "20%",
     display: "flex",
     textAlign: "center",
     flexDirection: "column",
     alignItems: "center",
-    width: "100%",
+    width: "40%",
 
     [theme.breakpoints.down("sm")]: {
       paddingTop: "10%",
-      display: "block",
-      textAlign: "left",
-      width: "40%",
+      width: "100%",
       "& span": {
         fontSize: "3rem",
       },

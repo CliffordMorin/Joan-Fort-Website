@@ -6,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { Bounce } from "react-awesome-reveal";
 import makeStyles from "./styles";
-import band from "../../images/compressed/Album-pics/band.jpg";
+import joantrio1 from "../../images/joantrio1.jpg";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 
@@ -25,13 +25,19 @@ const Discography = () => {
       </Helmet>
       <Grow in>
         <Container maxWidth="xl" style={{ backgroundColor: "#040404" }}>
-          <Typography variant="h2" align="center" pt={5} gutterBottom>
+          <Typography
+            variant="h2"
+            align="center"
+            pt={5}
+            gutterBottom
+            sx={{ color: theme.palette.text.colorful }}
+          >
             <Bounce>DISCOGRAPHY</Bounce>
           </Typography>
           <Divider
             sx={{
               zIndex: "100",
-              backgroundColor: theme.palette.text.primary,
+              backgroundColor: theme.palette.text.colorful,
               height: "2px",
               width: "100px",
               margin: "auto",
@@ -47,7 +53,7 @@ const Discography = () => {
             <Grid item xs={12} md={6}>
               <LazyLoadImage
                 className={classes.images}
-                src={band}
+                src={joantrio1}
                 effect="blur"
                 alt="martin"
               />

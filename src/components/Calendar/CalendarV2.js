@@ -61,13 +61,17 @@ const CalendarV2 = () => {
         />
         <link rel="canonical" href="/calendar" />
       </Helmet>
-      <Typography variant="h2" align="center" sx={{ pt: 5, pb: 2 }}>
+      <Typography
+        variant="h2"
+        align="center"
+        sx={{ pt: 5, pb: 2, color: theme.palette.text.colorful }}
+      >
         <Bounce>UPCOMING SHOWS</Bounce>
       </Typography>
       <Divider
         sx={{
           zIndex: "100",
-          backgroundColor: theme.palette.text.primary,
+          backgroundColor: theme.palette.text.colorful,
           height: "2px",
           width: "100px",
           margin: "auto",

@@ -12,7 +12,7 @@ export default makeStyles((theme) => ({
     },
   },
   text: {
-    color: "#fff",
+    color: theme.palette.text.light,
     textAlign: "justify",
     textJustify: "inter-word",
     padding: "10px 40px",
@@ -22,7 +22,7 @@ export default makeStyles((theme) => ({
     },
   },
   button: {
-    color: "#fff",
+    color: theme.palette.text.dark,
     marginBottom: "25px",
     backgroundColor: theme.palette.primary.main,
     "&:hover": {

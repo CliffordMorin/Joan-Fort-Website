@@ -80,7 +80,6 @@ const Home = () => {
       <Container
         className={classes.textContainer}
         sx={{
-          ml: 0,
           [theme.breakpoints.down("sm")]: {
             width: "60%",
             pt: "20%",
@@ -96,6 +95,7 @@ const Home = () => {
             variant="h1"
             sx={{
               display: "inline",
+              color: theme.palette.text.light,
               [theme.breakpoints.down("sm")]: {
                 pb: 10,
               },
@@ -107,7 +107,7 @@ const Home = () => {
               component="span"
               sx={{
                 display: "inline",
-                color: theme.palette.secondary.main,
+                color: theme.palette.text.dark,
               }}
             >
               FORT
@@ -115,35 +115,28 @@ const Home = () => {
           </Typography>
         </Fade>
         <Fade delay="100">
-          <Typography variant="h5">Guitarist, Composer & Educator</Typography>
+          <Typography variant="h5" sx={{ color: theme.palette.text.light }}>
+            Guitarist, Composer & Educator
+          </Typography>
         </Fade>
 
-        <Divider
-          sx={{
-            backgroundColor: theme.palette.secondary.main,
-            width: "20%",
-            height: "2px",
-            margin: "20px auto",
-            display: "block",
-            [theme.breakpoints.down("sm")]: {
-              width: "40%",
-              ml: 0,
-            },
-          }}
-        />
+        <Divider className={classes.divider} />
 
         <Fade delay="100">
-          <Typography variant="h6" sx={{ marginBottom: "20px" }}>
+          <Typography
+            variant="h6"
+            sx={{ marginBottom: "20px", color: theme.palette.text.light }}
+          >
             New Album{" "}
             <a
-              href="https://open.spotify.com/album/4lqu02Opk6iEkJlSQlRSgh?si=z-dtIJeIT7mY2fuv5OrXaQ"
+              href="https://music.apple.com/nl/album/master-street-feat-dick-oatts/1684467353?i=1684467557"
               className={classes.link}
               target="_blank"
               rel="noreferrer"
             >
-              "IDENTITIES"
+              "THE DAM JAWN"
             </a>{" "}
-            Available Now
+            Presave
           </Typography>
         </Fade>
       </Container>

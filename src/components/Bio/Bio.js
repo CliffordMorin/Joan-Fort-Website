@@ -16,7 +16,7 @@ import {
 
 import { Bounce } from "react-awesome-reveal";
 import makeStyles from "./styles";
-import martin6 from "../../images/compressed/martin6.jpg";
+import joan7 from "../../images/joan7.jpg";
 import martin6small from "../../images/compressed/martin6small.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -46,7 +46,13 @@ const Bio = () => {
       </Helmet>
       <Grow in>
         <Container maxWidth="xl" sx={{ backgroundColor: "#040404", pb: 7 }}>
-          <Typography variant="h2" align="center" pt={5} gutterBottom>
+          <Typography
+            variant="h2"
+            align="center"
+            pt={5}
+            gutterBottom
+            sx={{ color: theme.palette.text.colorful }}
+          >
             <Bounce>
               {language === "en"
                 ? en?.title?.toUpperCase()
@@ -58,7 +64,7 @@ const Bio = () => {
           <Divider
             sx={{
               zIndex: "100",
-              backgroundColor: theme.palette.text.primary,
+              backgroundColor: theme.palette.text.colorful,
               height: "2px",
               width: "100px",
               margin: "auto",
@@ -74,7 +80,7 @@ const Bio = () => {
             <Grid item xs={12} md={6}>
               <LazyLoadImage
                 className={classes.images}
-                src={isSmallScreen ? martin6small : martin6}
+                src={isSmallScreen ? martin6small : joan7}
                 effect="blur"
                 alt="martin"
               />

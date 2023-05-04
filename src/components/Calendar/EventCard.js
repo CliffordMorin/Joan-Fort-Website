@@ -34,7 +34,8 @@ const EventCard = ({ event }) => {
       >
         <Box
           sx={{
-            bgcolor: "warning.main",
+            bgcolor: "text.dark",
+            color: "text.colorful",
             borderRadius: 2,
             px: 1,
             py: 0.5,
@@ -55,7 +56,7 @@ const EventCard = ({ event }) => {
       >
         <Box
           sx={{
-            bgcolor: "secondary.main",
+            bgcolor: "text.colorful",
             borderRadius: 2,
             px: 2.5,
             py: 2,
@@ -77,6 +78,7 @@ const EventCard = ({ event }) => {
         <Typography
           variant="h5"
           sx={{
+            color: "text.colorful",
             mr: 2,
             "@media (max-width:600px)": {
               fontSize: "1rem",
@@ -86,7 +88,11 @@ const EventCard = ({ event }) => {
           {title}
         </Typography>
         <Link href={url} target="_blank" rel="noreferrer">
-          <Button variant="contained" color="secondary" size="medium">
+          <Button
+            variant="contained"
+            size="medium"
+            sx={{ color: "text.dark", bgcolor: "text.colorful" }}
+          >
             RSVP
           </Button>
         </Link>

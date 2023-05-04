@@ -10,12 +10,12 @@ const colorPalette = {
 };
 
 let fonts = {
-  header1: "Cantarell, serif",
-  header2: "Bodoni Moda, serif",
-  header3: "Montserrat Subrayada, serif",
-  body1: "PT Sans Narrow, sans-serif",
-  body2: "Labrada, serif",
-  body3: "Montserrat, serif",
+  header1: "Abril Fatface, serif",
+  header2: "Raleway, serif",
+  header3: "Raleway, serif",
+  body1: "Noto Sans Georgia, sans-serif",
+  body2: "Open Sans, serif",
+  body3: "Open Sans, serif",
 };
 
 let theme = createTheme({
@@ -24,6 +24,7 @@ let theme = createTheme({
       light: colorPalette.textLight,
       dark: colorPalette.textDark,
       colorful: colorPalette.tiffanyBlue,
+      black: colorPalette.bgDark,
     },
     primary: {
       main: colorPalette.tiffanyBlue,
@@ -33,8 +34,10 @@ let theme = createTheme({
       light: colorPalette.textLight,
     },
     background: {
-      paper: colorPalette.bgDark,
+      paper: colorPalette.textDark,
       default: colorPalette.cafeNoir,
+      nav: colorPalette.textDark,
+      dark: colorPalette.bgDark,
     },
   },
   typography: {
