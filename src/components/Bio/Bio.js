@@ -17,7 +17,7 @@ import {
 import { Bounce } from "react-awesome-reveal";
 import makeStyles from "./styles";
 import joan7 from "../../images/joan7.jpg";
-import martin6small from "../../images/compressed/martin6small.jpg";
+// import martin6small from "../../images/compressed/martin6small.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Helmet } from "react-helmet-async";
@@ -80,7 +80,7 @@ const Bio = () => {
             <Grid item xs={12} md={6}>
               <LazyLoadImage
                 className={classes.images}
-                src={isSmallScreen ? martin6small : joan7}
+                src={joan7}
                 effect="blur"
                 alt="martin"
               />
@@ -110,7 +110,7 @@ const Bio = () => {
                 </Button>
               </Box>
               <Typography
-                variant="body1"
+                variant="body2"
                 align="center"
                 className={classes.text}
                 py={isSmallScreen ? 0 : 2}
@@ -123,7 +123,7 @@ const Bio = () => {
                   : es?.bio1}
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 align="center"
                 className={classes.text}
                 p={2}
@@ -135,7 +135,7 @@ const Bio = () => {
                   : es?.bio2}
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 align="center"
                 className={classes.text}
                 p={2}
@@ -147,7 +147,7 @@ const Bio = () => {
                   : es?.bio3}
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 align="center"
                 className={classes.text}
                 p={2}
@@ -159,7 +159,7 @@ const Bio = () => {
                   : es?.bio4}
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 align="center"
                 className={classes.text}
                 p={2}
@@ -171,7 +171,7 @@ const Bio = () => {
                   : es?.bio5}
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 align="center"
                 className={classes.text}
                 p={2}
@@ -183,7 +183,7 @@ const Bio = () => {
                   : es?.bio6}
               </Typography>
               <Typography
-                variant="body1"
+                variant="body2"
                 align="center"
                 className={classes.text}
                 p={2}

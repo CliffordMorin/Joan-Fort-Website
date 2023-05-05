@@ -74,7 +74,7 @@ const Home = () => {
             </>
           }
         >
-          New album "The Dam Jawn" coming soon!{" "}
+          New album "The Dam Jawn" presave now!{" "}
         </Alert>
       </Snackbar>
       <Container
@@ -101,7 +101,7 @@ const Home = () => {
               },
             }}
           >
-            <b>JOAN</b>
+            JOAN
             <Typography
               variant="h1"
               component="span"

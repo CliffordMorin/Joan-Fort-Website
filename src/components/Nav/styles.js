@@ -13,6 +13,13 @@ export default makeStyles((theme) => ({
       color: theme.palette.text.black,
     },
   },
+  navLinkTextDesktop: {
+    color: theme.palette.text.dark,
+    fontWeight: "bold",
+    "&:hover": {
+      color: theme.palette.text.black,
+    },
+  },
   navLinkTextActiveDesktop: {
     color: theme.palette.text.colorful,
     "&:hover": {

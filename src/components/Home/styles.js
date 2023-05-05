@@ -17,14 +17,15 @@ export default makeStyles((theme) => ({
     textDecoration: "none",
     color: theme.palette.secondary.main,
     cursor: "pointer",
+    fontWeight: "bold",
     "&:hover": {
       color: theme.palette.secondary.light,
     },
   },
   divider: {
     backgroundColor: theme.palette.text.dark,
-    width: "20%",
-    height: "2px",
+    width: "40%",
+    height: "3px",
     margin: "20px auto",
     display: "block",
     [theme.breakpoints.down("sm")]: {

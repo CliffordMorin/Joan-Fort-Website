@@ -21,21 +21,6 @@ const Contact = () => {
         <link rel="canonical" href="/contact" />
       </Helmet>
       <Container className={classes.container} maxWidth="xl">
-        <Fade>
-          <Typography variant="h2" align="center" className={classes.heading}>
-            CONTACT
-          </Typography>
-        </Fade>
-        <Divider
-          sx={{
-            zIndex: "100",
-            backgroundColor: theme.palette.text.colorful,
-            height: "2px",
-            width: "100px",
-            margin: "auto",
-            mb: 5,
-          }}
-        />
         <div className={classes.paperContainer}>
           <Paper
             elevation={16}
@@ -50,6 +35,25 @@ const Contact = () => {
               },
             }}
           >
+            <Fade>
+              <Typography
+                variant="h2"
+                align="center"
+                className={classes.heading}
+              >
+                CONTACT ME
+              </Typography>
+            </Fade>
+            <Divider
+              sx={{
+                zIndex: "100",
+                backgroundColor: theme.palette.text.colorful,
+                height: "2px",
+                width: "100px",
+                margin: "auto",
+                mb: 3,
+              }}
+            />
             <ContactForm />
           </Paper>
         </div>
