@@ -33,7 +33,6 @@ const CalendarV2 = () => {
       setLoading(true);
       const response = await fetch(API_URL);
       const data = await response.json();
-      console.log(data);
       setEvents(data);
     } catch (error) {
       console.log(error);

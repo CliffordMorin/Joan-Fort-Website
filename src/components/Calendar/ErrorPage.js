@@ -25,12 +25,15 @@ const ErrorPage = ({ error }) => {
             p: isMobile ? 4 : 8,
           }}
         >
-          <Typography variant="h6" sx={{ mb: 2, textAlign: "center" }}>
+          <Typography
+            variant="h6"
+            sx={{ mb: 2, textAlign: "center", color: "text.colorful" }}
+          >
             There was an error loading the shows, reload the page to try again.
             If the problem persists, please contact me or my website developer.
           </Typography>
           <Link
-            href="mailto:cliffthedev@gmail.com?subject=Martin%20Diaz%20Calendar%20Error"
+            href="mailto:cliffthedev@gmail.com?subject=Joan%20Fort%20Calendar%20Error"
             target="_blank"
           >
             <Button
@@ -49,7 +52,9 @@ const ErrorPage = ({ error }) => {
             </Button>
           </Link>
 
-          <Typography variant="h6">{error.message}</Typography>
+          <Typography variant="h6" color="text.colorful">
+            {error.message}
+          </Typography>
         </Paper>
       </Box>
     </Grid>

@@ -11,7 +11,7 @@ import {
 import { SiBandsintown } from "react-icons/si";
 
 const API_KEY = process.env.REACT_APP_BANDSINTOWN_API_KEY;
-const ARTIST_ID = "12667113";
+const ARTIST_ID = "15520741";
 
 const EmptyCalendar = () => {
   const isMobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
@@ -30,12 +30,15 @@ const EmptyCalendar = () => {
             p: isMobile ? 4 : 8,
           }}
         >
-          <Typography variant="h3" sx={{ mb: 2, textAlign: "center" }}>
+          <Typography
+            variant="h3"
+            sx={{ mb: 2, textAlign: "center", color: "text.colorful" }}
+          >
             No shows scheduled
           </Typography>
-          <Typography variant="h6">
+          <Typography variant="h6" color="text.colorful">
             There are currently shows scheduled. Please check back later! Or you
-            can track Martin on Bandsintown to get notified when new shows are
+            can track Joan on Bandsintown to get notified when new shows are
             announced.
           </Typography>
           <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
