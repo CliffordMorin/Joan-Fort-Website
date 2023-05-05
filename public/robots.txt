@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: 
-Sitemap: http://www.martindiazmusic.com/sitemap.xml
+Sitemap: http://www.joanfort.com/sitemap.xml
