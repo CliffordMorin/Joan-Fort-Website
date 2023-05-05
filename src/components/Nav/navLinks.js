@@ -16,7 +16,7 @@ const navLinksDesktop = [
       { page: "PICTURES", link: "/pictures", id: 6 },
       {
         page: "EPK",
-        link: "https://drive.google.com/file/d/1F324HfSH12jcc-HNdzSMt69jKWNUh4Ri/view?usp=sharing",
+        link: "https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Aaa557c3a-3b8c-3b52-b294-f9c70aaa92d1&viewer%21megaVerb=group-discover",
         id: 7,
       },
     ],
