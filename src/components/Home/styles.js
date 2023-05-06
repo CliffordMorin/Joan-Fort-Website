@@ -13,6 +13,12 @@ export default makeStyles((theme) => ({
       backgroundPosition: "50%",
     },
   },
+  logo: {
+    width: "80%",
+    [theme.breakpoints.down("sm")]: {
+      width: "80%",
+    },
+  },
   link: {
     textDecoration: "none",
     color: theme.palette.secondary.main,
@@ -35,7 +41,7 @@ export default makeStyles((theme) => ({
   },
   textContainer: {
     paddingTop: "4%",
-    paddingLeft: "20%",
+    paddingLeft: "10%",
     display: "flex",
     textAlign: "center",
     flexDirection: "column",
@@ -44,6 +50,7 @@ export default makeStyles((theme) => ({
 
     [theme.breakpoints.down("sm")]: {
       paddingTop: "10%",
+      paddingLeft: "20%",
       width: "100%",
       "& span": {
         fontSize: "3rem",

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   Container,
-  Typography,
-  Divider,
   useMediaQuery,
   Snackbar,
   Alert,
@@ -14,6 +12,8 @@ import useTheme from "@mui/material/styles/useTheme";
 import { Fade } from "react-awesome-reveal";
 import makeStyles from "./styles";
 import { Helmet } from "react-helmet-async";
+// import { ReactComponent as LogoLarge } from "../../images/logoLarge.svg";
+import LogoLarge from "../../images/logoLarge.png";
 
 const Home = () => {
   const theme = useTheme();
@@ -53,7 +53,6 @@ const Home = () => {
       </Helmet>
       <Snackbar
         open={open}
-        autoHideDuration={6000}
         onClose={handleClose}
         TransitionComponent={TransitionDown}
       >
@@ -74,7 +73,16 @@ const Home = () => {
             </>
           }
         >
-          New album "The Dam Jawn" presave now!{" "}
+          New album{" "}
+          <a
+            href="https://orcd.co/avvade9"
+            className={classes.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            "MASTER STREET" by The Dam Jawn ft Dick Oatts
+          </a>{" "}
+          out now! Click to listen now!{" "}
         </Alert>
       </Snackbar>
       <Container
@@ -90,7 +98,8 @@ const Home = () => {
         maxWidth={isSmallScreen ? "sm" : "lg"}
       >
         <Fade delay="50">
-          <Typography
+          <img src={LogoLarge} alt="logo" className={classes.logo} />
+          {/* <Typography
             component="span"
             variant="h1"
             sx={{
@@ -112,9 +121,9 @@ const Home = () => {
             >
               FORT
             </Typography>
-          </Typography>
+          </Typography> */}
         </Fade>
-        <Fade delay="100">
+        {/* <Fade delay="100">
           <Typography variant="h5" sx={{ color: theme.palette.text.light }}>
             Guitarist, Composer & Educator
           </Typography>
@@ -127,18 +136,17 @@ const Home = () => {
             variant="h6"
             sx={{ marginBottom: "20px", color: theme.palette.text.light }}
           >
-            New Album{" "}
             <a
-              href="https://music.apple.com/nl/album/master-street-feat-dick-oatts/1684467353?i=1684467557"
+              href="https://orcd.co/avvade9"
               className={classes.link}
               target="_blank"
               rel="noreferrer"
             >
               "THE DAM JAWN"
             </a>{" "}
-            Presave
+            Out Now!
           </Typography>
-        </Fade>
+        </Fade> */}
       </Container>
     </Container>
   );
