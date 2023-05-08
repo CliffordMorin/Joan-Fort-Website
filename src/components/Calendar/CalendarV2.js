@@ -100,7 +100,7 @@ const CalendarV2 = () => {
           >
             <Button
               variant="contained"
-              size="large"
+              size="medium"
               sx={{
                 mt: 2,
                 backgroundColor: "text.colorful",
@@ -111,7 +111,7 @@ const CalendarV2 = () => {
               }}
               onClick={handleToggleShows}
             >
-              <Typography>
+              <Typography variant="body1">
                 View{" "}
                 {toggleShows === "UPCOMING SHOWS"
                   ? "PREVIOUS SHOWS"
