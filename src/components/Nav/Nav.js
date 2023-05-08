@@ -37,16 +37,28 @@ const Nav = () => {
         <Toolbar disableGutters>
           <Link to="/" style={{ textDecoration: "none", color: "red" }}>
             <Typography
-              variant="h4"
+              variant="h1"
               noWrap
               component="div"
               sx={{
                 mr: 2,
+                fontWeight: "bold",
                 display: { xs: "none", md: "flex" },
               }}
             >
-              <b style={{ color: theme.palette.text.primary }}>JOAN</b>
-              <b style={{ color: theme.palette.secondary.main }}>FORT</b>
+              <span
+                style={{ color: theme.palette.text.primary, fontSize: "3rem" }}
+              >
+                JOAN
+              </span>
+              <span
+                style={{
+                  color: theme.palette.secondary.main,
+                  fontSize: "3rem",
+                }}
+              >
+                FORT
+              </span>
             </Typography>
           </Link>
           <NavTabsMobile />
@@ -58,16 +70,28 @@ const Nav = () => {
             }}
           >
             <Typography
-              variant="h3"
+              variant="h1"
               noWrap
               component="div"
               sx={{
                 ml: 6,
+                fontWeight: "bold",
                 display: { xs: "flex", md: "none" },
               }}
             >
-              <b style={{ color: theme.palette.text.primary }}>JOAN</b>
-              <b style={{ color: theme.palette.secondary.main }}>FORT</b>
+              <span
+                style={{ color: theme.palette.text.primary, fontSize: "2rem" }}
+              >
+                JOAN
+              </span>
+              <span
+                style={{
+                  color: theme.palette.secondary.main,
+                  fontSize: "2rem",
+                }}
+              >
+                FORT
+              </span>
             </Typography>
           </Link>
 
