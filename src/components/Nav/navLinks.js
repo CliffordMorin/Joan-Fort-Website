@@ -1,7 +1,6 @@
 import { FaHome, FaInfoCircle, FaVideo } from "react-icons/fa";
 import { TfiWrite } from "react-icons/tfi";
 import { TbVinyl } from "react-icons/tb";
-import { MdPermMedia } from "react-icons/md";
 import { BsFillCameraFill, BsCalendarEventFill } from "react-icons/bs";
 import { AiFillPicture, AiFillMail } from "react-icons/ai";
 import { GrDocumentDownload } from "react-icons/gr";
