@@ -89,6 +89,8 @@ const NavTabsDesktop = () => {
                     color: "white",
                     display: "block",
                   }}
+                  className={classes.ButtonMobile}
+                  key={item.id}
                   onClick={() => {
                     if (item.page === "About") {
                       handleAboutMenuOpen();
@@ -97,9 +99,10 @@ const NavTabsDesktop = () => {
                     }
                   }}
                 >
+                  <item.icon className={classes.IconsMobile} />
                   <Typography
                     className={classes.navLinkTextMobile}
-                    variant="h7"
+                    variant="h1"
                   >
                     {item.page}
                   </Typography>
@@ -138,9 +141,10 @@ const NavTabsDesktop = () => {
                             handleMenuClose();
                           }}
                         >
+                          <childItem.icon className={classes.IconsMobile} />
                           <Typography
                             className={classes.navLinkTextMobile}
-                            variant="h7"
+                            variant="h1"
                           >
                             {childItem.page}
                           </Typography>
@@ -186,9 +190,10 @@ const NavTabsDesktop = () => {
                               handleMenuClose();
                             }}
                           >
+                            <childItem.icon className={classes.IconsMobile} />
                             <Typography
                               className={classes.navLinkTextMobile}
-                              variant="h7"
+                              variant="h1"
                             >
                               {childItem.page}
                             </Typography>
@@ -210,9 +215,10 @@ const NavTabsDesktop = () => {
                               handleMenuClose();
                             }}
                           >
+                            <childItem.icon className={classes.IconsMobile} />
                             <Typography
                               className={classes.navLinkTextMobile}
-                              variant="h7"
+                              variant="h1"
                             >
                               {childItem.page}
                             </Typography>
@@ -238,10 +244,12 @@ const NavTabsDesktop = () => {
                     display: "block",
                   }}
                   onClick={handleMenuClose}
+                  className={classes.ButtonMobile}
                 >
+                  <item.icon className={classes.IconsMobile} />
                   <Typography
                     className={classes.navLinkTextMobile}
-                    variant="h7"
+                    variant="h1"
                   >
                     {item.page}
                   </Typography>

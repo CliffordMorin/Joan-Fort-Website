@@ -46,7 +46,7 @@ const Nav = () => {
               }}
             >
               <b style={{ color: theme.palette.text.primary }}>JOAN</b>
-              <span style={{ color: theme.palette.secondary.main }}>FORT</span>
+              <b style={{ color: theme.palette.secondary.main }}>FORT</b>
             </Typography>
           </Link>
           <NavTabsMobile />
@@ -67,7 +67,7 @@ const Nav = () => {
               }}
             >
               <b style={{ color: theme.palette.text.primary }}>JOAN</b>
-              <span style={{ color: theme.palette.secondary.main }}>FORT</span>
+              <b style={{ color: theme.palette.secondary.main }}>FORT</b>
             </Typography>
           </Link>
 

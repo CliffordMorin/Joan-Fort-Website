@@ -6,7 +6,9 @@ const colorPalette = {
   timberWolf: "#d6e5e3",
   tiffanyBlue: "#9fd8cb",
   textDark: "#11255d",
+  textLessDark: "#2a427c",
   textLight: "#d6e5e3",
+  colorfulHover: "#7cbbae",
 };
 
 let fonts = {
@@ -25,6 +27,8 @@ let theme = createTheme({
       dark: colorPalette.textDark,
       colorful: colorPalette.tiffanyBlue,
       black: colorPalette.bgDark,
+      colorfulHover: colorPalette.colorfulHover,
+      lessDark: colorPalette.textLessDark,
     },
     primary: {
       main: colorPalette.tiffanyBlue,

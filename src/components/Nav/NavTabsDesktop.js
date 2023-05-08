@@ -57,7 +57,8 @@ const NavTabsDesktop = () => {
                   }
                 }}
               >
-                <Typography className={classes.navLinkTextDesktop} variant="h6">
+                <item.icon className={classes.IconsDesktop} />
+                <Typography className={classes.navLinkTextDesktop} variant="h1">
                   {item.page}
                 </Typography>
               </Button>
@@ -82,9 +83,12 @@ const NavTabsDesktop = () => {
                         onClick={handleAboutMenuClose}
                         className={classes.navLinkTextDesktop}
                       >
+                        <childItem.icon
+                          className={classes.IconsDesktopDropdown}
+                        />
                         <Typography
-                          className={classes.navLinkTextActiveDesktop}
-                          variant="h7"
+                          className={classes.navLinkTextDropdownDesktop}
+                          variant="h1"
                         >
                           {childItem.page}
                         </Typography>
@@ -118,9 +122,12 @@ const NavTabsDesktop = () => {
                           onClick={handleAboutMenuClose}
                           className={classes.navLinkTextDesktop}
                         >
+                          <childItem.icon
+                            className={classes.IconsDesktopDropdown}
+                          />
                           <Typography
-                            className={classes.navLinkTextActiveDesktop}
-                            variant="h7"
+                            className={classes.navLinkTextDropdownDesktop}
+                            variant="h1"
                           >
                             {childItem.page}
                           </Typography>
@@ -140,9 +147,12 @@ const NavTabsDesktop = () => {
                           onClick={handleAboutMenuClose}
                           className={classes.navLinkTextDesktop}
                         >
+                          <childItem.icon
+                            className={classes.IconsDesktopDropdown}
+                          />
                           <Typography
-                            className={classes.navLinkTextActiveDesktop}
-                            variant="h7"
+                            className={classes.navLinkTextDropdownDesktop}
+                            variant="h1"
                           >
                             {childItem.page}
                           </Typography>
@@ -168,7 +178,8 @@ const NavTabsDesktop = () => {
                   display: "block",
                 }}
               >
-                <Typography className={classes.navLinkTextDesktop} variant="h6">
+                <item.icon className={classes.IconsDesktop} />
+                <Typography className={classes.navLinkTextDesktop} variant="h1">
                   {item.page}
                 </Typography>
               </Button>
