@@ -6,6 +6,7 @@ import {
   Alert,
   IconButton,
   Slide,
+  Typography,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import useTheme from "@mui/material/styles/useTheme";
@@ -13,7 +14,7 @@ import { Fade } from "react-awesome-reveal";
 import makeStyles from "./styles";
 import { Helmet } from "react-helmet-async";
 // import { ReactComponent as LogoLarge } from "../../images/logoLarge.svg";
-import LogoLarge from "../../images/logoLarge.png";
+import logo from "../../images/logo.svg";
 
 const Home = () => {
   const theme = useTheme();
@@ -98,13 +99,15 @@ const Home = () => {
         maxWidth={isSmallScreen ? "sm" : "lg"}
       >
         <Fade delay="50">
-          <img src={LogoLarge} alt="logo" className={classes.logo} />
-          {/* <Typography
+          <img src={logo} alt="logo" className={classes.logo} />
+        </Fade>
+        <Fade delay="100">
+          <Typography
             component="span"
             variant="h1"
             sx={{
               display: "inline",
-              color: theme.palette.text.light,
+              color: theme.palette.text.colorful,
               [theme.breakpoints.down("sm")]: {
                 pb: 10,
               },
@@ -121,7 +124,7 @@ const Home = () => {
             >
               FORT
             </Typography>
-          </Typography> */}
+          </Typography>
         </Fade>
         {/* <Fade delay="100">
           <Typography variant="h5" sx={{ color: theme.palette.text.light }}>

@@ -14,9 +14,9 @@ export default makeStyles((theme) => ({
     },
   },
   logo: {
-    width: "80%",
+    width: "65%",
     [theme.breakpoints.down("sm")]: {
-      width: "80%",
+      width: "50%",
     },
   },
   link: {
@@ -40,20 +40,25 @@ export default makeStyles((theme) => ({
     },
   },
   textContainer: {
-    paddingTop: "4%",
-    paddingLeft: "10%",
+    paddingTop: "2%",
+    paddingLeft: "13%",
     display: "flex",
     textAlign: "center",
     flexDirection: "column",
     alignItems: "center",
     width: "40%",
+    "& span": {
+      fontSize: "3rem",
+      fontWeight: "bold",
+      paddingRight: "10px",
+    },
 
     [theme.breakpoints.down("sm")]: {
-      paddingTop: "10%",
-      paddingLeft: "20%",
+      paddingTop: "7%",
+      paddingLeft: "30%",
       width: "100%",
       "& span": {
-        fontSize: "3rem",
+        fontSize: "2rem",
       },
       "& h5": {
         fontSize: "1.3rem",
