@@ -19,19 +19,31 @@ import ErrorPage from "./ErrorPage";
 const API_KEY = process.env.REACT_APP_BANDSINTOWN_API_KEY;
 const ARTIST_ID = "15520741";
 
-const API_URL = `https://rest.bandsintown.com/v3.1/artists/joan%20fort/events?app_id=${API_KEY}&date=upcoming`;
-
 const CalendarV2 = () => {
   const theme = useTheme();
   const [visibleEvents, setVisibleEvents] = useState(5);
   const [events, setEvents] = useState([]);
   const [isLoading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [toggleShows, setToggleShows] = useState("UPCOMING SHOWS");
+  const [date, setDate] = useState("upcoming");
+
+  const handleToggleShows = () => {
+    if (toggleShows === "PREVIOUS SHOWS") {
+      setToggleShows("UPCOMING SHOWS");
+      setDate("upcoming");
+    } else {
+      setToggleShows("PREVIOUS SHOWS");
+      setDate("past");
+    }
+  };
 
   const fetchEvents = useCallback(async () => {
     try {
       setLoading(true);
-      const response = await fetch(API_URL);
+      const response = await fetch(
+        `https://rest.bandsintown.com/v3.1/artists/joan%20fort/events?app_id=${API_KEY}&date=${date}`
+      );
       const data = await response.json();
       setEvents(data);
     } catch (error) {
@@ -40,7 +52,7 @@ const CalendarV2 = () => {
     } finally {
       setLoading(false);
     }
-  }, []);
+  }, [date]);
 
   const handleLoadMore = () => {
     setVisibleEvents(visibleEvents + 5);
@@ -65,7 +77,7 @@ const CalendarV2 = () => {
         align="center"
         sx={{ pt: 5, pb: 2, color: theme.palette.text.colorful }}
       >
-        <Bounce>UPCOMING SHOWS</Bounce>
+        <Bounce>{toggleShows}</Bounce>
       </Typography>
       <Divider
         sx={{
@@ -74,11 +86,39 @@ const CalendarV2 = () => {
           height: "2px",
           width: "100px",
           margin: "auto",
-          mb: 5,
+          mb: 2,
         }}
       />
-      <Container sx={{ mt: 7, mb: 7 }}>
+
+      <Container sx={{ mb: 7 }}>
         <Grid container spacing={{ xs: 3, md: 3 }}>
+          <Grid
+            item
+            xs={12}
+            md={12}
+            sx={{ display: "flex", justifyContent: "center" }}
+          >
+            <Button
+              variant="contained"
+              size="large"
+              sx={{
+                mt: 2,
+                backgroundColor: "text.colorful",
+                color: "text.dark",
+                "&:hover": {
+                  backgroundColor: "text.colorfulHover",
+                },
+              }}
+              onClick={handleToggleShows}
+            >
+              <Typography>
+                View{" "}
+                {toggleShows === "UPCOMING SHOWS"
+                  ? "PREVIOUS SHOWS"
+                  : "UPCOMING SHOWS"}
+              </Typography>
+            </Button>
+          </Grid>
           {isLoading ? (
             <LoadingPage />
           ) : events.length > 0 ? (

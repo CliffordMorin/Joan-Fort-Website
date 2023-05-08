@@ -83,7 +83,7 @@ const Home = () => {
           >
             "MASTER STREET" by The Dam Jawn ft Dick Oatts
           </a>{" "}
-          out now! Click to listen now!{" "}
+          out now! Click to listen!{" "}
         </Alert>
       </Snackbar>
       <Container
