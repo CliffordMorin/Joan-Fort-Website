@@ -40,7 +40,7 @@ export default makeStyles((theme) => ({
     },
   },
   textContainer: {
-    paddingTop: "2%",
+    paddingTop: "1%",
     paddingLeft: "13%",
     display: "flex",
     textAlign: "center",
