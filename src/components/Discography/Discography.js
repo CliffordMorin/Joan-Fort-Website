@@ -60,6 +60,17 @@ const Discography = () => {
             </Grid>
             <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
               <iframe
+                title="Master st"
+                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                src="https://open.spotify.com/embed/album/3kxUnjjRa5Jjr0G4C06Pqp?utm_source=generator"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
                 title="Spotify"
                 style={{ borderRadius: "10px", margin: "0px 10px" }}
                 src="https://open.spotify.com/embed/album/4p93zaXPeRj2G6ZZEKh6Ki?utm_source=generator"
