@@ -3,10 +3,34 @@ import { Container, Typography, Divider } from "@mui/material";
 import { Bounce } from "react-awesome-reveal";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
+import VideoItem from "./VideoItem";
 
 const Videos = () => {
   const classes = makeStyles();
   const theme = useTheme();
+  const video = [
+    {
+      title: "Dam Jawn 'Send In the Clowns'",
+      link: "https://www.youtube.com/embed/wuf-jbppOog",
+    },
+    {
+      title: "Dam Jawn 'Master St'",
+      link: "https://www.youtube.com/embed/UR6oHk4okfo",
+    },
+    {
+      title: "Joan Fort Organ trio 'you'll be missed'",
+      link: "https://www.youtube.com/embed/LbwxIs6h1sk",
+    },
+    {
+      title: "Joan Fort Organ trio 'Lyresto'",
+      link: "https://www.youtube.com/embed/k4Xk0Q4IJzc",
+    },
+    {
+      title: "Joan Fort Organ trio 'Speedball'",
+      link: "https://www.youtube.com/embed/0S--_i2M28Q",
+    },
+    // Add more videos as needed
+  ];
   return (
     <Container>
       <Helmet>
@@ -31,42 +55,13 @@ const Videos = () => {
           mb: 5,
         }}
       />
-      <Container align="center" className={classes.video}>
-        <iframe
-          width="560"
-          height="315"
-          className={classes.iframe}
-          src="https://www.youtube.com/embed/LbwxIs6h1sk"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </Container>
-      <Container align="center" className={classes.video}>
-        <iframe
-          width="560"
-          height="315"
-          className={classes.iframe}
-          src="https://www.youtube.com/embed/k4Xk0Q4IJzc"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </Container>
-      <Container align="center" className={classes.video}>
-        <iframe
-          width="560"
-          height="315"
-          className={classes.iframe}
-          src="https://www.youtube.com/embed/0S--_i2M28Q"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
-      </Container>
+      {video.map((video, index) => {
+        return (
+          <Container align="center" className={classes.video}>
+            <VideoItem key={index} title={video.title} link={video.link} />
+          </Container>
+        );
+      })}
     </Container>
   );
 };
