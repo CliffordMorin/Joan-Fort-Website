@@ -1,11 +1,14 @@
 import { Box, Typography, Button, Link } from "@mui/material";
 
-const EventCard = ({ event }) => {
+const UpcomingEventCard = ({ event }) => {
   const { venue, datetime, url, title } = event;
   const date = new Date(datetime).toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
   });
+  const formatTitle = title?.split("@")[0].trim();
+
+  console.log(formatTitle);
 
   return (
     <Box
@@ -85,7 +88,7 @@ const EventCard = ({ event }) => {
             },
           }}
         >
-          {title}
+          {formatTitle}
         </Typography>
         <Link href={url} target="_blank" rel="noreferrer">
           <Button
@@ -101,4 +104,4 @@ const EventCard = ({ event }) => {
   );
 };
 
-export default EventCard;
+export default UpcomingEventCard;

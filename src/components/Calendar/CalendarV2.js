@@ -11,7 +11,8 @@ import { Bounce } from "react-awesome-reveal";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 import { SiBandsintown } from "react-icons/si";
-import EventCard from "./EventCard";
+import UpcomingEventCard from "./UpcomingEventCard";
+import PrevEventCard from "./PrevEventCard";
 import EmptyCalendar from "./EmptyCalendar";
 import LoadingPage from "./LoadingPage";
 import ErrorPage from "./ErrorPage";
@@ -31,20 +32,28 @@ const CalendarV2 = () => {
   const handleToggleShows = () => {
     if (toggleShows === "PREVIOUS SHOWS") {
       setToggleShows("UPCOMING SHOWS");
+      fetchEvents("upcoming");
       setDate("upcoming");
     } else {
       setToggleShows("PREVIOUS SHOWS");
+      fetchEvents("past");
       setDate("past");
     }
   };
 
-  const fetchEvents = useCallback(async () => {
+  console.log(date);
+
+  const fetchEvents = useCallback(async (selectedDate) => {
     try {
       setLoading(true);
       const response = await fetch(
-        `https://rest.bandsintown.com/v3.1/artists/joan%20fort/events?app_id=${API_KEY}&date=${date}`
+        `https://rest.bandsintown.com/v3.1/artists/joan%20fort/events?app_id=${API_KEY}&date=${selectedDate}`
       );
       const data = await response.json();
+      if (selectedDate === "past") {
+        data.sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
+      }
+
       setEvents(data);
     } catch (error) {
       console.log(error);
@@ -52,15 +61,15 @@ const CalendarV2 = () => {
     } finally {
       setLoading(false);
     }
-  }, [date]);
+  }, []);
 
   const handleLoadMore = () => {
     setVisibleEvents(visibleEvents + 5);
   };
 
   useEffect(() => {
-    fetchEvents();
-  }, [fetchEvents]);
+    fetchEvents(date);
+  }, [fetchEvents, date]);
 
   return (
     <div>
@@ -124,7 +133,11 @@ const CalendarV2 = () => {
           ) : events.length > 0 ? (
             events?.slice(0, visibleEvents).map((event) => (
               <Grid key={event.id} item xs={12}>
-                <EventCard event={event} />
+                {toggleShows === "UPCOMING SHOWS" ? (
+                  <UpcomingEventCard event={event} />
+                ) : (
+                  <PrevEventCard event={event} />
+                )}
               </Grid>
             ))
           ) : error ? (
