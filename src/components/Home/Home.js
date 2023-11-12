@@ -61,6 +61,7 @@ const Home = () => {
           elevation={6}
           variant="filled"
           severity="info"
+          className={classes.transparentSnackbar}
           action={
             <>
               <IconButton

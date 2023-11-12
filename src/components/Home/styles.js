@@ -39,6 +39,9 @@ export default makeStyles((theme) => ({
       ml: 0,
     },
   },
+  transparentSnackbar: {
+    backgroundColor: "rgba(33, 150, 243, 0.5)", // Adjust the alpha channel (fourth value) as needed
+  },
   textContainer: {
     paddingTop: "1%",
     paddingLeft: "13%",
