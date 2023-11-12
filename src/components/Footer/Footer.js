@@ -29,8 +29,8 @@ const Footer = () => {
               >
                 <FontAwesomeIcon
                   icon={faInstagram}
-                  className="fa-2xl insta"
-                  style={{ margin: "5px 10px 16px 10px" }}
+                  className="fa-2xl "
+                  style={{ margin: "5px 10px 16px 10px", color: "#11255d" }}
                 />
               </a>
 
@@ -40,7 +40,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <YouTube
-                  htmlColor="#FF0000"
+                  htmlColor="#11255d"
                   fontSize="large"
                   style={{ margin: "5px 10px" }}
                 />
@@ -52,7 +52,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <Facebook
-                  htmlColor="#4267B2"
+                  htmlColor="#11255d"
                   fontSize="large"
                   style={{ margin: "5px 10px" }}
                 />
