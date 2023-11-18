@@ -15,75 +15,86 @@ import dam6 from "../../images/DamJawn/dam6.jpg";
 import dam7 from "../../images/DamJawn/dam7.jpg";
 import dam8 from "../../images/DamJawn/dam8.jpg";
 import dam9 from "../../images/DamJawn/dam9.jpg";
+import dam10 from "../../images/DamJawn/dam10.jpg";
+import dam11 from "../../images/DamJawn/dam11.jpg";
+import dam12 from "../../images/DamJawn/dam12.jpg";
+import dam13 from "../../images/DamJawn/dam13.jpg";
+import dam14 from "../../images/DamJawn/dam14.jpg";
+import dam15 from "../../images/DamJawn/dam15.jpg";
+import JFTrio1 from "../../images/JFTrio1.jpg";
+import JFTrio2 from "../../images/JFTrio2.jpg";
+import JFTrio3 from "../../images/JFTrio3.jpg";
+import JFTriofeatMartíMitjavila from "../../images/JF Trio feat. Martí Mitjavila.jpg";
+import JFTriofeatTimothyBanchet1 from "../../images/JF Trio feat. Timothy Banchet 1.jpg";
+
+import JoanFortTrioLive from "../../images/Joan Fort Trio (Live).jpg";
 
 const images = [
   {
-    original: joan4,
-    thumbnail: joan4,
+    original: JFTrio1,
+    thumbnail: JFTrio1,
+    loading: "lazy",
+    description: "Joan Fort Trio",
   },
   {
-    original: joantrio,
-    thumbnail: joantrio,
+    original: JFTrio3,
+    thumbnail: JFTrio3,
+    loading: "lazy",
+    description: "Joan Fort Trio",
   },
   {
-    original: joantrio1,
-    thumbnail: joantrio1,
+    original: JFTriofeatMartíMitjavila,
+    thumbnail: JFTriofeatMartíMitjavila,
+    loading: "lazy",
+    description: "Joan Fort Trio feat. Martí Mitjavila",
   },
   {
-    original: joantrio2,
-    thumbnail: joantrio2,
+    original: JFTriofeatTimothyBanchet1,
+    thumbnail: JFTriofeatTimothyBanchet1,
+    loading: "lazy",
+    description: "Joan Fort Trio feat. Timothy Banchet",
   },
   {
-    original: joan1,
-    thumbnail: joan1,
+    original: JoanFortTrioLive,
+    thumbnail: JoanFortTrioLive,
+    loading: "lazy",
+    description: "Joan Fort Trio Live",
   },
   {
-    original: joan2,
-    thumbnail: joan2,
+    original: dam11,
+    thumbnail: dam11,
+    loading: "lazy",
+    description: "The Dam Jawn",
   },
   {
-    original: joan3,
-    thumbnail: joan3,
+    original: dam12,
+    thumbnail: dam12,
+    loading: "lazy",
+    description: "The Dam Jawn",
   },
   {
-    original: joantrio3,
-    thumbnail: joantrio3,
+    original: dam13,
+    thumbnail: dam13,
+    loading: "lazy",
+    description: "The Dam Jawn",
   },
   {
-    original: dam1,
-    thumbnail: dam1,
+    original: dam14,
+    thumbnail: dam14,
+    loading: "lazy",
+    description: "The Dam Jawn",
   },
   {
-    original: dam2,
-    thumbnail: dam2,
-  },
-  {
-    original: dam3,
-    thumbnail: dam3,
+    original: dam15,
+    thumbnail: dam15,
+    loading: "lazy",
+    description: "The Dam Jawn",
   },
   {
     original: JawnDickOatts,
     thumbnail: JawnDickOatts,
-  },
-  {
-    original: dam5,
-    thumbnail: dam5,
-  },
-  {
-    original: dam6,
-    thumbnail: dam6,
-  },
-  {
-    original: dam7,
-    thumbnail: dam7,
-  },
-  {
-    original: dam8,
-    thumbnail: dam8,
-  },
-  {
-    original: dam9,
-    thumbnail: dam9,
+    loading: "lazy",
+    description: "The Dam Jawn",
   },
 ];
 
