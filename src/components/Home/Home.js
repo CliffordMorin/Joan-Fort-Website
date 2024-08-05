@@ -75,14 +75,14 @@ const Home = () => {
             </>
           }
         >
-          New album{" "}
+          New single{" "}
           <a
-            href="https://orcd.co/avvade9"
+            href="https://open.spotify.com/album/3uU7yZAaIM0VnzbCoYWD5a?si=C2jAY3boTHmqKuMTM4LFnA"
             className={classes.link}
             target="_blank"
             rel="noreferrer"
           >
-            "MASTER ST" by The Dam Jawn ft Dick Oatts
+            "Wayne's Mind's Eye" by The Dam Jawn ft Dick Oatts
           </a>{" "}
           out now! Click to listen!{" "}
         </Alert>
