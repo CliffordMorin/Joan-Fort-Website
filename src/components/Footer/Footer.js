@@ -3,6 +3,7 @@ import { Container, Box, Typography } from "@mui/material";
 import { YouTube, Facebook, Favorite } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import promoJoan from "../../images/promoJoan.jpeg";
 import makeStyles from "./styles";
 import "./style.css";
 
@@ -86,6 +87,17 @@ const Footer = () => {
             </Box>
           </Container>
         </Box>
+        <img
+          src={promoJoan}
+          alt="joan promo"
+          style={{
+            position: "fixed",
+            right: "10px",
+            bottom: "10px",
+            width: "100px", // Adjust size here
+            height: "auto",
+          }}
+        />
       </footer>
     </div>
   );
