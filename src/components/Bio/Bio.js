@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import en from "./en.json";
 import es from "./es.json";
 import ca from "./ca.json";
+import nl from "./nl.json";
 import useTheme from "@mui/material/styles/useTheme";
 import {
   Container,
@@ -58,6 +59,8 @@ const Bio = () => {
                 ? en?.title?.toUpperCase()
                 : language === "ca"
                 ? ca?.title?.toUpperCase()
+                : language === "nl"
+                ? nl?.title?.toUpperCase()
                 : es?.title?.toUpperCase()}
             </Bounce>
           </Typography>
@@ -108,6 +111,13 @@ const Bio = () => {
                 >
                   Catalan
                 </Button>
+                <Button
+                  value="nl"
+                  onClick={handleLanguage}
+                  className={classes.button}
+                >
+                  Dutch
+                </Button>
               </Box>
               <Typography
                 variant="body2"
@@ -120,6 +130,8 @@ const Bio = () => {
                   ? en?.bio1
                   : language === "ca"
                   ? ca?.bio1
+                  : language === "nl"
+                  ? nl?.bio1
                   : es?.bio1}
               </Typography>
               <Typography
@@ -132,6 +144,8 @@ const Bio = () => {
                   ? en?.bio2
                   : language === "ca"
                   ? ca?.bio2
+                  : language === "nl"
+                  ? nl?.bio2
                   : es?.bio2}
               </Typography>
               <Typography
@@ -144,6 +158,8 @@ const Bio = () => {
                   ? en?.bio3
                   : language === "ca"
                   ? ca?.bio3
+                  : language === "nl"
+                  ? nl?.bio3
                   : es?.bio3}
               </Typography>
               <Typography
@@ -156,6 +172,8 @@ const Bio = () => {
                   ? en?.bio4
                   : language === "ca"
                   ? ca?.bio4
+                  : language === "nl"
+                  ? nl?.bio4
                   : es?.bio4}
               </Typography>
               <Typography
@@ -168,6 +186,8 @@ const Bio = () => {
                   ? en?.bio5
                   : language === "ca"
                   ? ca?.bio5
+                  : language === "nl"
+                  ? nl?.bio5
                   : es?.bio5}
               </Typography>
               <Typography
@@ -180,9 +200,11 @@ const Bio = () => {
                   ? en?.bio6
                   : language === "ca"
                   ? ca?.bio6
+                  : language === "nl"
+                  ? nl?.bio6
                   : es?.bio6}
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="body2"
                 align="center"
                 className={classes.text}
@@ -192,8 +214,10 @@ const Bio = () => {
                   ? en?.bio7
                   : language === "ca"
                   ? ca?.bio7
+                  : language === "nl"
+                  ? nl?.bio7
                   : es?.bio7}
-              </Typography>
+              </Typography> */}
             </Grid>
           </Grid>
         </Container>
