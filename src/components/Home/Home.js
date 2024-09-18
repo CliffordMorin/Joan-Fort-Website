@@ -75,14 +75,14 @@ const Home = () => {
             </>
           }
         >
-          New single{" "}
+          New Album{" "}
           <a
-            href="https://open.spotify.com/album/3uU7yZAaIM0VnzbCoYWD5a?si=C2jAY3boTHmqKuMTM4LFnA"
+            href="https://open.spotify.com/album/0sUcan38J0H0R6Jey4661Y?si=P8mnDHqgRHy8A-PmijqOnw"
             className={classes.link}
             target="_blank"
             rel="noreferrer"
           >
-            "Wayne's Mind's Eye" by The Dam Jawn ft Dick Oatts
+            "Forward!" by The Dam Jawn ft Dick Oatts
           </a>{" "}
           out now! Click to listen!{" "}
         </Alert>
