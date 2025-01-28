@@ -24,7 +24,7 @@ const Discography = () => {
         <link rel="canonical" href="/discography" />
       </Helmet>
       <Grow in>
-        <Container maxWidth="xl" style={{ backgroundColor: "#040404" }}>
+        <Container maxWidth="xl">
           <Typography
             variant="h2"
             align="center"
@@ -60,13 +60,24 @@ const Discography = () => {
             </Grid>
             <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
               <iframe
-                title="Wayne's Mind's Eye"
+                title="So Far, So Good"
                 style={{ borderRadius: "10px", margin: "0px 10px" }}
-                src="https://open.spotify.com/embed/album/3uU7yZAaIM0VnzbCoYWD5a?utm_source=generator"
+                src="https://open.spotify.com/embed/album/3JethU0YM8wTTyWouZAQ8c?utm_source=generator"
                 width="95%"
                 height="352"
                 frameBorder="0"
-                allowFullScreen=""
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
+                title="Forward!"
+                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                src="https://open.spotify.com/embed/album/0sUcan38J0H0R6Jey4661Y?utm_source=generator"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>

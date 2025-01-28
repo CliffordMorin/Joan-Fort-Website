@@ -77,12 +77,12 @@ const Home = () => {
         >
           New Album{" "}
           <a
-            href="https://open.spotify.com/album/0sUcan38J0H0R6Jey4661Y?si=P8mnDHqgRHy8A-PmijqOnw"
+            href="https://open.spotify.com/album/3JethU0YM8wTTyWouZAQ8c?si=8GlN3lDfTq6OP2effRzZgQ"
             className={classes.link}
             target="_blank"
             rel="noreferrer"
           >
-            "Forward!" by The Dam Jawn ft Dick Oatts
+            "So Far, So Good"
           </a>{" "}
           out now! Click to listen!{" "}
         </Alert>
