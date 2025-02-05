@@ -14,12 +14,12 @@ export default makeStyles((theme) => ({
   logo: {
     width: "65%",
     [theme.breakpoints.down("sm")]: {
-      width: "50%",
+      width: "20%",
     },
   },
   link: {
     textDecoration: "none",
-    color: theme.palette.secondary.main,
+    color: theme.palette.text.dark,
     cursor: "pointer",
     fontWeight: "bold",
     "&:hover": {
@@ -55,8 +55,9 @@ export default makeStyles((theme) => ({
     },
 
     [theme.breakpoints.down("sm")]: {
+      fontSize: "10px",
       paddingTop: "7%",
-      paddingLeft: "30%",
+      paddingLeft: "0%",
       width: "100%",
       "& span": {
         fontSize: "2rem",
