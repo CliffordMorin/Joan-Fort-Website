@@ -26,12 +26,11 @@ export default makeStyles((theme) => ({
     },
   },
   button: {
-    color: theme.palette.text.light,
+    color: theme.palette.text.blake,
     marginBottom: "25px",
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.text.colorful,
     "&:hover": {
-      backgroundColor: theme.palette.secondary.main,
-      color: "#000",
+      backgroundColor: "#f0e68c",
     },
   },
 }));
