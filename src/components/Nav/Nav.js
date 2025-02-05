@@ -5,6 +5,7 @@ import NavTabsMobile from "./NavTabsMobile";
 
 import { AppBar, Toolbar, Typography, Container } from "@mui/material";
 import useTheme from "@mui/material/styles/useTheme";
+import { Fade } from "react-awesome-reveal";
 
 // import song from "../../audio/come-out.wav";
 import { Link } from "react-router-dom";
@@ -36,30 +37,35 @@ const Nav = () => {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link to="/" style={{ textDecoration: "none", color: "red" }}>
-            <Typography
-              variant="h1"
-              noWrap
-              component="div"
-              sx={{
-                mr: 2,
-                fontWeight: "bold",
-                display: { xs: "none", md: "flex" },
-              }}
-            >
-              <span
-                style={{ color: theme.palette.text.primary, fontSize: "3rem" }}
-              >
-                JOAN
-              </span>
-              <span
-                style={{
-                  color: theme.palette.secondary.main,
-                  fontSize: "3rem",
+            <Fade duration={2000} delay={1000} triggerOnce>
+              <Typography
+                variant="h1"
+                noWrap
+                component="div"
+                sx={{
+                  mr: 2,
+                  fontWeight: "bold",
+                  display: { xs: "none", md: "flex" },
                 }}
               >
-                FORT
-              </span>
-            </Typography>
+                <span
+                  style={{
+                    color: theme.palette.secondary.main,
+                    fontSize: "3rem",
+                  }}
+                >
+                  JOAN
+                </span>
+                <span
+                  style={{
+                    color: theme.palette.text.colorful,
+                    fontSize: "3rem",
+                  }}
+                >
+                  FORT
+                </span>
+              </Typography>
+            </Fade>
           </Link>
           <NavTabsMobile />
           <Link
@@ -80,13 +86,16 @@ const Nav = () => {
               }}
             >
               <span
-                style={{ color: theme.palette.text.primary, fontSize: "2rem" }}
+                style={{
+                  color: theme.palette.secondary.main,
+                  fontSize: "2rem",
+                }}
               >
                 JOAN
               </span>
               <span
                 style={{
-                  color: theme.palette.secondary.main,
+                  color: theme.palette.text.colorful,
                   fontSize: "2rem",
                 }}
               >

@@ -28,8 +28,29 @@ import JFTriofeatMartíMitjavila from "../../images/JF Trio feat. Martí Mitjavi
 import JFTriofeatTimothyBanchet1 from "../../images/JF Trio feat. Timothy Banchet 1.jpg";
 
 import JoanFortTrioLive from "../../images/Joan Fort Trio (Live).jpg";
+import Trio1 from "../../images/Trio1.jpg";
+import Trio2 from "../../images/Trio2.jpg";
+import Trio3 from "../../images/Trio3.jpg";
 
 const images = [
+  {
+    original: Trio1,
+    thumbnail: Trio1,
+    loading: "lazy",
+    description: "Joan Fort Trio",
+  },
+  {
+    original: Trio2,
+    thumbnail: Trio2,
+    loading: "lazy",
+    description: "Joan Fort Trio",
+  },
+  {
+    original: Trio3,
+    thumbnail: Trio3,
+    loading: "lazy",
+    description: "Joan Fort Trio",
+  },
   {
     original: JFTrio1,
     thumbnail: JFTrio1,

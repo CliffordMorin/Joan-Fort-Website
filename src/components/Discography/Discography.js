@@ -6,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import { Bounce } from "react-awesome-reveal";
 import makeStyles from "./styles";
-import joantrio1 from "../../images/joantrio1.jpg";
+import Disc from "../../images/Disc.jpg";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 
@@ -30,14 +30,14 @@ const Discography = () => {
             align="center"
             pt={5}
             gutterBottom
-            sx={{ color: theme.palette.text.colorful }}
+            sx={{ color: theme.palette.text.dark }}
           >
             <Bounce>DISCOGRAPHY</Bounce>
           </Typography>
           <Divider
             sx={{
               zIndex: "100",
-              backgroundColor: theme.palette.text.colorful,
+              backgroundColor: theme.palette.text.dark,
               height: "2px",
               width: "100px",
               margin: "auto",
@@ -53,7 +53,7 @@ const Discography = () => {
             <Grid item xs={12} md={6}>
               <LazyLoadImage
                 className={classes.images}
-                src={joantrio1}
+                src={Disc}
                 effect="blur"
                 alt="martin"
               />
@@ -61,7 +61,7 @@ const Discography = () => {
             <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
               <iframe
                 title="So Far, So Good"
-                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                className={classes.iframe}
                 src="https://open.spotify.com/embed/album/3JethU0YM8wTTyWouZAQ8c?utm_source=generator"
                 width="95%"
                 height="352"
@@ -72,7 +72,7 @@ const Discography = () => {
               ></iframe>
               <iframe
                 title="Forward!"
-                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                className={classes.iframe}
                 src="https://open.spotify.com/embed/album/0sUcan38J0H0R6Jey4661Y?utm_source=generator"
                 width="95%"
                 height="352"
@@ -83,7 +83,7 @@ const Discography = () => {
               ></iframe>
               <iframe
                 title="Master st"
-                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                className={classes.iframe}
                 src="https://open.spotify.com/embed/album/3kxUnjjRa5Jjr0G4C06Pqp?utm_source=generator"
                 width="95%"
                 height="352"
@@ -94,7 +94,7 @@ const Discography = () => {
               ></iframe>
               <iframe
                 title="Spotify"
-                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                className={classes.iframe}
                 src="https://open.spotify.com/embed/album/4p93zaXPeRj2G6ZZEKh6Ki?utm_source=generator"
                 width="95%"
                 height="352"
@@ -105,7 +105,7 @@ const Discography = () => {
               ></iframe>
               <iframe
                 title="Spotify"
-                style={{ borderRadius: "10px", margin: "0px 10px" }}
+                className={classes.iframe}
                 src="https://open.spotify.com/embed/album/1FBkFfyGX8KWuwU0wgU0f3?utm_source=generator"
                 width="95%"
                 height="352"

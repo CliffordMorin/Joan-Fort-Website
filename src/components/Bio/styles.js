@@ -26,7 +26,7 @@ export default makeStyles((theme) => ({
     },
   },
   button: {
-    color: theme.palette.text.dark,
+    color: theme.palette.text.light,
     marginBottom: "25px",
     backgroundColor: theme.palette.primary.main,
     "&:hover": {

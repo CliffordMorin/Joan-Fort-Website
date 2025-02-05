@@ -14,7 +14,7 @@ const LoadingPage = () => {
         width: "100%",
       }}
     >
-      <Typography variant="h4" sx={{ mb: 2 }} color="text.colorful">
+      <Typography variant="h4" sx={{ mb: 2 }} color="text.dark">
         Loading Shows...
       </Typography>
       <CircularProgress size={90} />

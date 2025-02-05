@@ -1,17 +1,15 @@
 import { makeStyles } from "@mui/styles";
-import joan5 from "../../images/joan5.jpg";
+import cover from "../../images/cover.jpeg";
 
 export default makeStyles((theme) => ({
   container: {
-    backgroundImage: `url(${joan5})`,
-    backgroundPosition: "50% 10%",
+    backgroundImage: `url(${cover})`,
+    backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundRepeat: "repeat",
+    backgroundRepeat: "no-repeat",
     height: "100vh",
 
-    [theme.breakpoints.down("sm")]: {
-      backgroundPosition: "50%",
-    },
+    [theme.breakpoints.down("sm")]: {},
   },
   logo: {
     width: "65%",

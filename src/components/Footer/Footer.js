@@ -31,7 +31,7 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="fa-2xl "
-                  style={{ margin: "5px 10px 16px 10px", color: "#11255d" }}
+                  style={{ margin: "5px 10px 16px 10px", color: "#f8f9fa" }}
                 />
               </a>
 
@@ -41,7 +41,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <YouTube
-                  htmlColor="#11255d"
+                  htmlColor="#f8f9fa"
                   fontSize="large"
                   style={{ margin: "5px 10px" }}
                 />
@@ -53,7 +53,7 @@ const Footer = () => {
                 rel="noreferrer"
               >
                 <Facebook
-                  htmlColor="#11255d"
+                  htmlColor="#f8f9fa"
                   fontSize="large"
                   style={{ margin: "5px 10px" }}
                 />
@@ -72,7 +72,10 @@ const Footer = () => {
               </a> */}
             </Box>
             <Box>
-              <Typography variant="h9" sx={{ fontSize: "10px" }}>
+              <Typography
+                variant="h9"
+                sx={{ fontSize: "10px", color: "#f8f9fa" }}
+              >
                 Made with <Favorite fontSize="10px" color="error" /> by{" "}
                 <a
                   href="https://cliffordmorin.dev"

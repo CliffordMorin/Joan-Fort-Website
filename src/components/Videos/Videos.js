@@ -49,14 +49,14 @@ const Videos = () => {
       <Typography
         align="center"
         variant="h2"
-        sx={{ pt: 5, pb: 2, color: theme.palette.text.colorful }}
+        sx={{ pt: 5, pb: 2, color: theme.palette.text.dark }}
       >
         <Bounce>VIDEOS</Bounce>
       </Typography>
       <Divider
         sx={{
           zIndex: "100",
-          backgroundColor: theme.palette.text.colorful,
+          backgroundColor: theme.palette.text.dark,
           height: "2px",
           width: "100px",
           margin: "auto",
@@ -66,7 +66,7 @@ const Videos = () => {
       <Typography
         align="center"
         variant="h2"
-        sx={{ pt: 5, pb: 2, color: theme.palette.text.colorful }}
+        sx={{ pt: 5, pb: 2, color: theme.palette.text.dark }}
       >
         Joan Fort Organ Trio
       </Typography>
@@ -80,7 +80,7 @@ const Videos = () => {
       <Typography
         align="center"
         variant="h2"
-        sx={{ pt: 5, pb: 2, color: theme.palette.text.colorful }}
+        sx={{ pt: 5, pb: 2, color: theme.palette.text.dark }}
       >
         Dam Jawn
       </Typography>

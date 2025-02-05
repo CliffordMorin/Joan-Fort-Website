@@ -7,7 +7,7 @@ export default makeStyles((theme) => ({
     display: "inline",
   },
   navLinkTextDesktop: {
-    color: theme.palette.text.lessDark,
+    color: theme.palette.text.colorful,
     fontSize: ".9rem",
     "& h1": {
       fontSize: ".9rem",
@@ -23,7 +23,7 @@ export default makeStyles((theme) => ({
     },
   },
   IconsDesktop: {
-    color: theme.palette.text.lessDark,
+    color: theme.palette.text.colorful,
     fontSize: "1.8rem",
     "&:hover": {
       color: theme.palette.text.dark,

@@ -90,10 +90,11 @@ const Home = () => {
       <Container
         className={classes.textContainer}
         sx={{
+          marginLeft: "60%",
           [theme.breakpoints.down("sm")]: {
-            width: "60%",
-            pt: "20%",
-            ml: 3,
+            width: "40%",
+            pt: "10%",
+            ml: 0,
             pl: 0,
           },
         }}
@@ -108,7 +109,7 @@ const Home = () => {
             variant="h1"
             sx={{
               display: "inline",
-              color: theme.palette.text.colorful,
+              color: theme.palette.text.textDark,
               [theme.breakpoints.down("sm")]: {
                 pb: 10,
               },
@@ -120,7 +121,7 @@ const Home = () => {
               component="span"
               sx={{
                 display: "inline",
-                color: theme.palette.text.dark,
+                color: theme.palette.secondary.main,
               }}
             >
               FORT
