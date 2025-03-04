@@ -190,7 +190,7 @@ const Bio = () => {
                   ? nl?.bio5
                   : es?.bio5}
               </Typography>
-              <Typography
+              {/* <Typography
                 variant="body2"
                 align="center"
                 className={classes.text}
@@ -203,7 +203,7 @@ const Bio = () => {
                   : language === "nl"
                   ? nl?.bio6
                   : es?.bio6}
-              </Typography>
+              </Typography> */}
               {/* <Typography
                 variant="body2"
                 align="center"
