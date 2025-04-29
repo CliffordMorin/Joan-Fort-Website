@@ -90,6 +90,9 @@ const Footer = () => {
             </Box>
           </Container>
         </Box>
+        <Typography variant="h6" align="center" gutterBottom>
+          Represented By Young Musicians International (TMI)
+        </Typography>
         <img
           src={promoJoan}
           alt="joan promo"
@@ -97,7 +100,7 @@ const Footer = () => {
             position: "fixed",
             right: "10px",
             bottom: "10px",
-            width: "50px", // Adjust size here
+            width: "100px", // Adjust size here
             height: "auto",
           }}
         />
