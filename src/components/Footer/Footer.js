@@ -91,7 +91,7 @@ const Footer = () => {
           </Container>
         </Box>
         <Typography variant="h6" align="center" gutterBottom>
-          Represented By Young Musicians International (TMI)
+          Represented By Young Musicians International (YMI)
         </Typography>
         <img
           src={promoJoan}
