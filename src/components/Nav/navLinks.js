@@ -30,7 +30,7 @@ const navLinksDesktop = [
         icon: GrDocumentDownload,
       },
       {
-        page: "Dam Jawn EPK",
+        page: "The Dam Jawn EPK",
         link: "/Booklet The Dam Jawn feat. Jeremy Pelt 2.pdf",
         id: 8,
         icon: GrDocumentDownload,
