@@ -24,15 +24,21 @@ const navLinksDesktop = [
       { page: "VIDEOS", link: "/videos", id: 5, icon: FaVideo },
       { page: "PICTURES", link: "/pictures", id: 6, icon: AiFillPicture },
       {
-        page: "EPK",
-        link: "https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Aaa557c3a-3b8c-3b52-b294-f9c70aaa92d1&viewer%21megaVerb=group-discover",
+        page: "Joan Fort EPK",
+        link: "https://www.notion.so/Joan-Fort-Trio-EPK-2278bb79968c80a7b137fb54382d8490?source=copy_link",
         id: 7,
+        icon: GrDocumentDownload,
+      },
+      {
+        page: "Dam Jawn EPK",
+        link: "/Booklet The Dam Jawn feat. Jeremy Pelt 2.pdf",
+        id: 8,
         icon: GrDocumentDownload,
       },
     ],
   },
-  { page: "SHOWS", link: "/calendar", id: 8, icon: BsCalendarEventFill },
-  { page: "CONTACT", link: "/contact", id: 9, icon: AiFillMail },
+  { page: "SHOWS", link: "/calendar", id: 9, icon: BsCalendarEventFill },
+  { page: "CONTACT", link: "/contact", id: 10, icon: AiFillMail },
 ];
 
 export default navLinksDesktop;

@@ -106,7 +106,8 @@ const NavTabsDesktop = () => {
                   key={item.id}
                 >
                   {item.children.map((childItem) =>
-                    childItem.page === "EPK" ? (
+                    childItem.page === "Joan Fort EPK" ||
+                    childItem.page === "Dam Jawn EPK" ? (
                       <a
                         href={childItem.link}
                         target="_blank"
