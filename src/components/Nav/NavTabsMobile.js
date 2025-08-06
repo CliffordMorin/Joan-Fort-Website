@@ -172,7 +172,8 @@ const NavTabsDesktop = () => {
                     }}
                   >
                     {item.children.map((childItem) =>
-                      childItem.page === "EPK" ? (
+                      childItem.page === "Joan Fort EPK" ||
+                      childItem.page === "The Dam Jawn EPK" ? (
                         <a
                           href={childItem.link}
                           target="_blank"
