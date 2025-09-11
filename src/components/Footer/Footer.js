@@ -4,6 +4,7 @@ import { YouTube, Facebook, Favorite } from "@mui/icons-material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import promoJoan from "../../images/promoJoan.png";
+import promoJoan2 from "../../images/promoJoan2.png";
 import makeStyles from "./styles";
 import "./style.css";
 
@@ -91,13 +92,25 @@ const Footer = () => {
           </Container>
         </Box>
         <Typography variant="h6" align="center" gutterBottom>
-          Represented By Young Musicians International (YMI)
+          Represented By YMI - Amb el suport de l’Institut Ramon Llull
         </Typography>
         <img
           src={promoJoan}
           alt="joan promo"
           style={{
             position: "fixed",
+            right: "10px",
+            bottom: "36px",
+            width: "100px", // Adjust size here
+            height: "auto",
+          }}
+        />
+        <img
+          src={promoJoan2}
+          alt="joan promo 2"
+          style={{
+            position: "fixed",
+            background: "white",
             right: "10px",
             bottom: "10px",
             width: "100px", // Adjust size here
