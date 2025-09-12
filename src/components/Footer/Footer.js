@@ -91,7 +91,12 @@ const Footer = () => {
             </Box>
           </Container>
         </Box>
-        <Typography variant="h6" align="center" gutterBottom>
+        <Typography
+          variant="body1"
+          sx={{ fontSize: { xs: ".5rem", md: "1rem" } }}
+          align="center"
+          gutterBottom
+        >
           Represented By YMI - Amb el suport de l’Institut Ramon Llull
         </Typography>
         <img
@@ -100,8 +105,8 @@ const Footer = () => {
           style={{
             position: "fixed",
             right: "10px",
-            bottom: "36px",
-            width: "100px", // Adjust size here
+            bottom: "31px",
+            width: "80px", // Adjust size here
             height: "auto",
           }}
         />
@@ -113,7 +118,7 @@ const Footer = () => {
             background: "white",
             right: "10px",
             bottom: "10px",
-            width: "100px", // Adjust size here
+            width: "80px", // Adjust size here
             height: "auto",
           }}
         />
