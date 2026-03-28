@@ -19,11 +19,14 @@ export default makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
-    color: theme.palette.text.dark,
+    color: "#FFD600", // Bright yellow for visibility
     cursor: "pointer",
-    fontWeight: "bold",
+    fontWeight: 900,
+    fontSize: "1.1em",
+    textShadow: "0 1px 2px #000",
     "&:hover": {
-      color: theme.palette.secondary.light,
+      color: "#fff",
+      textDecoration: "underline",
     },
   },
   divider: {
@@ -38,7 +41,42 @@ export default makeStyles((theme) => ({
     },
   },
   transparentSnackbar: {
-    backgroundColor: "rgba(33, 150, 243, 0.9)", // Adjust the alpha channel (fourth value) as needed
+    backgroundColor: "rgba(0,0,0,0.85)", // Black with opacity
+    color: "#fff",
+    fontWeight: 700,
+    textAlign: "center",
+    padding: "24px 32px",
+    maxWidth: 420,
+    margin: "0 auto",
+    [theme.breakpoints.down("sm")]: {
+      padding: "6px 4px 6px 14px",
+      fontSize: "0.82rem",
+      maxWidth: 170,
+      margin: "8px 0 0 8px",
+      textAlign: "left",
+    },
+  },
+  albumCover: {
+    width: "100%",
+    maxWidth: 300,
+    display: "block",
+    margin: "0 auto 16px auto",
+    borderRadius: 8,
+    transition: "transform 0.3s cubic-bezier(0.4,0,0.2,1)",
+    cursor: "pointer",
+    [theme.breakpoints.up("sm")]: {
+      "&:hover": {
+        transform: "scale(1.07)",
+      },
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 180,
+      margin: "0 0 12px 10px",
+      // No hover effect on mobile
+      "&:hover": {
+        transform: "none",
+      },
+    },
   },
   textContainer: {
     paddingTop: "1%",

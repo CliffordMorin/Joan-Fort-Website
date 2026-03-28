@@ -15,6 +15,7 @@ import makeStyles from "./styles";
 import { Helmet } from "react-helmet-async";
 // import { ReactComponent as LogoLarge } from "../../images/logoLarge.svg";
 import logo from "../../images/logo.svg";
+import newAlbum from "../../images/Hangin-In-Cover.jpg";
 
 const Home = () => {
   const theme = useTheme();
@@ -62,6 +63,7 @@ const Home = () => {
           variant="filled"
           severity="info"
           className={classes.transparentSnackbar}
+          icon={false}
           action={
             <>
               <IconButton
@@ -75,16 +77,30 @@ const Home = () => {
             </>
           }
         >
-          New Album{" "}
           <a
-            href="https://open.spotify.com/album/3JethU0YM8wTTyWouZAQ8c?si=8GlN3lDfTq6OP2effRzZgQ"
-            className={classes.link}
+            href="https://ada.lnk.to/_hanginin"
             target="_blank"
             rel="noreferrer"
+            style={{ display: "block" }}
           >
-            "So Far, So Good"
-          </a>{" "}
-          out now! Click to listen!{" "}
+            <img
+              src={newAlbum}
+              alt="Hangin' In Cover"
+              className={classes.albumCover}
+            />
+          </a>
+          <span style={{ fontWeight: 900 }}>
+            New Album{" "}
+            <a
+              href="https://ada.lnk.to/_hanginin"
+              className={classes.link}
+              target="_blank"
+              rel="noreferrer"
+            >
+              "Hangin' In"
+            </a>{" "}
+            out now! Click to listen!
+          </span>
         </Alert>
       </Snackbar>
       <Container
