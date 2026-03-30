@@ -59,6 +59,23 @@ const Discography = () => {
               />
             </Grid>
             <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
+              <Typography
+                variant="h4"
+                sx={{ mt: 3, mb: 1, color: theme.palette.text.dark }}
+              >
+                As Leader:
+              </Typography>
+              <iframe
+                title="Hangin' In"
+                className={classes.iframe}
+                src="https://open.spotify.com/embed/album/5CXVVpIQ2xuVeNTivgWdgi?utm_source=generator"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
               <iframe
                 title="So Far, So Good"
                 className={classes.iframe}
@@ -67,6 +84,23 @@ const Discography = () => {
                 height="352"
                 frameBorder="0"
                 allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <Typography
+                variant="h4"
+                sx={{ mt: 3, mb: 1, color: theme.palette.text.dark }}
+              >
+                As Co-Leader:
+              </Typography>
+              <iframe
+                title="Triphasic"
+                className={classes.iframe}
+                src="https://open.spotify.com/embed/album/2rqZ82DGG2Ucnjy4nh0cpu?utm_source=generator"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
@@ -85,6 +119,23 @@ const Discography = () => {
                 title="Master st"
                 className={classes.iframe}
                 src="https://open.spotify.com/embed/album/3kxUnjjRa5Jjr0G4C06Pqp?utm_source=generator"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <Typography
+                variant="h4"
+                sx={{ mt: 3, mb: 1, color: theme.palette.text.dark }}
+              >
+                As Sideman:
+              </Typography>
+              <iframe
+                title="The Lamp Is Low"
+                className={classes.iframe}
+                src="https://open.spotify.com/embed/album/544zydzZfrmAMQLWTCOvyZ?utm_source=generator"
                 width="95%"
                 height="352"
                 frameBorder="0"
@@ -114,6 +165,85 @@ const Discography = () => {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
               ></iframe>
+
+              <Typography
+                variant="h4"
+                sx={{ mt: 4, color: theme.palette.text.dark }}
+              >
+                As leader:
+              </Typography>
+              <ul>
+                <li>
+                  <Typography variant="body1">
+                    <a
+                      href="https://open.spotify.com/intl-es/album/5CXVVpIQ2xuVeNTivgWdgi?si=IrUZJpA1Rgq27UJ-2HPelA"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Hangin’ In (2026)
+                    </a>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    So Far, So Good (2025)
+                  </Typography>
+                </li>
+              </ul>
+
+              <Typography
+                variant="h4"
+                sx={{ mt: 3, color: theme.palette.text.dark }}
+              >
+                As co-leader:
+              </Typography>
+              <ul>
+                <li>
+                  <Typography variant="body1">
+                    <a
+                      href="https://open.spotify.com/intl-es/album/2rqZ82DGG2Ucnjy4nh0cpu?si=B4TsnHZyQWakCrCabcM9Dw"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Triphasic (2025)
+                    </a>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">Forward! (2024)</Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">Master St. (2023)</Typography>
+                </li>
+              </ul>
+
+              <Typography
+                variant="h4"
+                sx={{ mt: 3, color: theme.palette.text.dark }}
+              >
+                As sideman:
+              </Typography>
+              <ul>
+                <li>
+                  <Typography variant="body1">
+                    <a
+                      href="https://open.spotify.com/intl-es/album/544zydzZfrmAMQLWTCOvyZ?si=0SGi_vRuRfSsUWF2nIfOjA"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Too Soon, Too Late (2026)
+                    </a>
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">
+                    The Badger Digs Deep (2022)
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1">Find The Way (2020)</Typography>
+                </li>
+              </ul>
             </Grid>
           </Grid>
         </Container>
