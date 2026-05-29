@@ -4,6 +4,7 @@ import { TbVinyl } from "react-icons/tb";
 import { BsFillCameraFill, BsCalendarEventFill } from "react-icons/bs";
 import { AiFillPicture, AiFillMail } from "react-icons/ai";
 import { GrDocumentDownload } from "react-icons/gr";
+import { MdNewspaper } from "react-icons/md";
 
 const navLinksDesktop = [
   { page: "Home", link: "/", id: 0, icon: FaHome },
@@ -13,6 +14,7 @@ const navLinksDesktop = [
     icon: FaInfoCircle,
     children: [
       { page: "BIO", link: "/bio", id: 2, icon: TfiWrite },
+      { page: "PRESS", link: "/press", id: 11, icon: MdNewspaper },
       { page: "DISCOGRAPHY", link: "/discography", id: 3, icon: TbVinyl },
     ],
   },
