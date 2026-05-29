@@ -5,7 +5,7 @@ export default makeStyles((theme) => ({
     marginBottom: theme.spacing(3),
     padding: theme.spacing(2),
     borderLeft: `4px solid ${theme.palette.primary.main}`,
-    backgroundColor: "#ffffff",
+    backgroundColor: "rgba(255, 255, 255, 0.85)",
     borderRadius: "4px",
     color: "#000000",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",

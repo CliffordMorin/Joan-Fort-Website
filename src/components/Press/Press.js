@@ -5,12 +5,22 @@ import makeStyles from "./styles";
 import useTheme from "@mui/material/styles/useTheme";
 import { Helmet } from "react-helmet-async";
 
+import joanFortHeadshot from "../../images/JoanFortHeadshot.jpg";
+
 const Press = () => {
   const classes = makeStyles();
   const theme = useTheme();
 
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url(${joanFortHeadshot})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        minHeight: "100vh",
+      }}
+    >
       <Helmet>
         <title>Joan Fort | Press</title>
         <meta
@@ -26,18 +36,26 @@ const Press = () => {
             align="center"
             pt={5}
             gutterBottom
-            sx={{ color: theme.palette.text.dark }}
+            sx={{
+              color: "#ffffff",
+              textShadow: "2px 2px 8px rgba(0, 0, 0, 0.8)",
+              fontWeight: "bold",
+              backgroundColor: "rgba(0, 0, 0, 0.3)",
+              padding: "20px",
+              borderRadius: "8px",
+            }}
           >
             <Bounce>PRESS</Bounce>
           </Typography>
           <Divider
             sx={{
               zIndex: "100",
-              backgroundColor: theme.palette.text.dark,
-              height: "2px",
-              width: "100px",
+              backgroundColor: "#ffffff",
+              height: "3px",
+              width: "150px",
               margin: "auto",
               mb: 5,
+              boxShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
             }}
           />
 
@@ -47,8 +65,12 @@ const Press = () => {
             sx={{
               mt: 4,
               mb: 2,
-              color: theme.palette.text.dark,
+              color: "#ffffff",
               fontWeight: "bold",
+              textShadow: "2px 2px 6px rgba(0, 0, 0, 0.8)",
+              backgroundColor: "rgba(0, 0, 0, 0.3)",
+              padding: "15px",
+              borderRadius: "6px",
             }}
           >
             AS LEADER:
@@ -59,10 +81,14 @@ const Press = () => {
             sx={{
               mt: 2,
               mb: 2,
-              color: "#000000",
+              color: "#ffffff",
               fontWeight: "600",
-              pl: 1,
+              pl: 2,
               borderLeft: `3px solid ${theme.palette.primary.main}`,
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.8)",
+              backgroundColor: "rgba(0, 0, 0, 0.2)",
+              padding: "10px 15px",
+              borderRadius: "4px",
             }}
           >
             Hangin' In (2026)
@@ -193,8 +219,12 @@ const Press = () => {
             sx={{
               mt: 5,
               mb: 2,
-              color: theme.palette.text.dark,
+              color: "#ffffff",
               fontWeight: "bold",
+              textShadow: "2px 2px 6px rgba(0, 0, 0, 0.8)",
+              backgroundColor: "rgba(0, 0, 0, 0.3)",
+              padding: "15px",
+              borderRadius: "6px",
             }}
           >
             AS SIDEMAN:
@@ -205,10 +235,14 @@ const Press = () => {
             sx={{
               mt: 2,
               mb: 2,
-              color: "#000000",
+              color: "#ffffff",
               fontWeight: "600",
-              pl: 1,
+              pl: 2,
               borderLeft: `3px solid ${theme.palette.primary.main}`,
+              textShadow: "1px 1px 4px rgba(0, 0, 0, 0.8)",
+              backgroundColor: "rgba(0, 0, 0, 0.2)",
+              padding: "10px 15px",
+              borderRadius: "4px",
             }}
           >
             Triphasic - The Dam Jawn feat. Jeremy Pelt
