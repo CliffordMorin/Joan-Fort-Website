@@ -24,15 +24,64 @@ import dam15 from "../../images/DamJawn/dam15.jpg";
 import JFTrio1 from "../../images/JFTrio1.jpg";
 // import JFTrio2 from "../../images/JFTrio2.jpg";
 import JFTrio3 from "../../images/JFTrio3.jpg";
-import JFTriofeatMartíMitjavila from "../../images/JF Trio feat. Martí Mitjavila.jpg";
 import JFTriofeatTimothyBanchet1 from "../../images/JF Trio feat. Timothy Banchet 1.jpg";
 
-import JoanFortTrioLive from "../../images/Joan Fort Trio (Live).jpg";
+import JeremyPelt from "../../images/JeremyPelt.jpg";
+import JeremyPelt2 from "../../images/JeremyPelt2.jpg";
+import JoanFortTrioFeatVincentHerring from "../../images/Joan Fort Trio feat. Vincent Herring.jpg";
+import JoanFortHeadshot from "../../images/JoanFortHeadshot.jpg";
+import TheDamJawnFeatJeremyPelt from "../../images/The Dam Jawn feat. Jeremy Pelt.jpg";
+import VincentHerringJoanFortTrio from "../../images/Vincent Herring & Joan Fort Trio.jpg";
+import VincentHerringJoanFort from "../../images/Vincent Herring & Joan Fort.jpg";
+
 import Trio1 from "../../images/Trio1.jpg";
 import Trio2 from "../../images/Trio2.jpg";
 import Trio3 from "../../images/Trio3.jpg";
 
 const images = [
+  {
+    original: JoanFortTrioFeatVincentHerring,
+    thumbnail: JoanFortTrioFeatVincentHerring,
+    loading: "lazy",
+    description: "Joan Fort Trio feat. Vincent Herring",
+  },
+  {
+    original: JoanFortHeadshot,
+    thumbnail: JoanFortHeadshot,
+    loading: "lazy",
+    description: "Joan Fort Headshot",
+  },
+  {
+    original: TheDamJawnFeatJeremyPelt,
+    thumbnail: TheDamJawnFeatJeremyPelt,
+    loading: "lazy",
+    description: "The Dam Jawn feat Jeremy Pelt",
+  },
+  {
+    original: VincentHerringJoanFortTrio,
+    thumbnail: VincentHerringJoanFortTrio,
+    loading: "lazy",
+    description: "Vincent Herring & Joan Fort Trio",
+  },
+  {
+    original: VincentHerringJoanFort,
+    thumbnail: VincentHerringJoanFort,
+    loading: "lazy",
+    description: "Vincent Herring & Joan Fort",
+  },
+  {
+    original: JeremyPelt,
+    thumbnail: JeremyPelt,
+    loading: "lazy",
+    description: "Jeremy Pelt",
+  },
+
+  {
+    original: JeremyPelt2,
+    thumbnail: JeremyPelt2,
+    loading: "lazy",
+    description: "Jeremy Pelt",
+  },
   {
     original: Trio1,
     thumbnail: Trio1,
@@ -63,24 +112,14 @@ const images = [
     loading: "lazy",
     description: "Joan Fort Trio",
   },
-  {
-    original: JFTriofeatMartíMitjavila,
-    thumbnail: JFTriofeatMartíMitjavila,
-    loading: "lazy",
-    description: "Joan Fort Trio feat. Martí Mitjavila",
-  },
+
   {
     original: JFTriofeatTimothyBanchet1,
     thumbnail: JFTriofeatTimothyBanchet1,
     loading: "lazy",
     description: "Joan Fort Trio feat. Timothy Banchet",
   },
-  {
-    original: JoanFortTrioLive,
-    thumbnail: JoanFortTrioLive,
-    loading: "lazy",
-    description: "Joan Fort Trio Live",
-  },
+
   {
     original: dam11,
     thumbnail: dam11,
