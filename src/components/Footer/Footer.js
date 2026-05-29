@@ -91,15 +91,15 @@ const Footer = () => {
             </Box>
           </Container>
         </Box>
-        <Typography
+        {/* <Typography
           variant="body1"
           sx={{ fontSize: { xs: ".5rem", md: "1rem" } }}
           align="center"
           gutterBottom
         >
           Represented By YMI - Amb el suport de l’Institut Ramon Llull
-        </Typography>
-        <img
+        </Typography> */}
+        {/* <img
           src={promoJoan}
           alt="joan promo"
           style={{
@@ -121,7 +121,7 @@ const Footer = () => {
             width: "80px", // Adjust size here
             height: "auto",
           }}
-        />
+        /> */}
       </footer>
     </div>
   );
