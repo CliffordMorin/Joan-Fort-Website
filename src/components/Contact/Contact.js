@@ -55,6 +55,40 @@ const Contact = () => {
               }}
             />
             <ContactForm />
+            <Typography
+              variant="h3"
+              align="center"
+              sx={{
+                mt: 6,
+                mb: 2,
+                fontWeight: 700,
+                color: theme.palette.common.white,
+              }}
+            >
+              Stichting Cicade
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              sx={{
+                mb: 1.5,
+                color: theme.palette.common.white,
+                fontSize: "1.1rem",
+              }}
+            >
+              Contact: stichtingcicade@gmail.com
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              sx={{
+                mb: 0,
+                color: theme.palette.common.white,
+                fontSize: "1.1rem",
+              }}
+            >
+              For bookings: Freddie's Talent Agency — fta-artists.com
+            </Typography>
           </Paper>
         </div>
       </Container>
