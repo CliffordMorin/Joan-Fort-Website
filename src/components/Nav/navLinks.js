@@ -26,14 +26,14 @@ const navLinksDesktop = [
       { page: "VIDEOS", link: "/videos", id: 5, icon: FaVideo },
       { page: "PICTURES", link: "/pictures", id: 6, icon: AiFillPicture },
       {
-        page: "The Joan Fort NY Quintet EPK",
-        link: "https://www.notion.so/The-Joan-Fort-NY-Quintet-EPK-25c8bb79968c808fa9d2d18e4431e232",
+        page: "Joan Fort EPK",
+        link: "/Joan_Fort_EPK.pdf",
         id: 7,
         icon: GrDocumentDownload,
       },
       {
-        page: "Joan Fort Trio EPK",
-        link: "https://www.notion.so/Joan-Fort-Trio-EPK-2278bb79968c80a7b137fb54382d8490?source=copy_link",
+        page: "Joan Fort PR Sheet",
+        link: "/Joan_Fort_PR_Sheet.pdf",
         id: 8,
         icon: GrDocumentDownload,
       },

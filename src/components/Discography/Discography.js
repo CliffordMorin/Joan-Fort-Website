@@ -133,6 +133,17 @@ const Discography = () => {
                 As Sideman:
               </Typography>
               <iframe
+                title="Too Soon, Too Late"
+                className={classes.iframe}
+                src="https://open.spotify.com/embed/album/6qOw3DbtAGf2i4zN7fCO9B?utm_source=generator"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
                 title="The Lamp Is Low"
                 className={classes.iframe}
                 src="https://open.spotify.com/embed/album/544zydzZfrmAMQLWTCOvyZ?utm_source=generator"

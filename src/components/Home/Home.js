@@ -15,7 +15,6 @@ import makeStyles from "./styles";
 import { Helmet } from "react-helmet-async";
 // import { ReactComponent as LogoLarge } from "../../images/logoLarge.svg";
 import logo from "../../images/logo.svg";
-import newAlbum from "../../images/Hangin-In-Cover.jpg";
 
 const Home = () => {
   const theme = useTheme();
@@ -77,29 +76,13 @@ const Home = () => {
             </>
           }
         >
-          <a
-            href="https://ada.lnk.to/_hanginin"
-            target="_blank"
-            rel="noreferrer"
-            style={{ display: "block" }}
-          >
-            <img
-              src={newAlbum}
-              alt="Hangin' In Cover"
-              className={classes.albumCover}
-            />
-          </a>
+          <img
+            src="/Portada%20FSR%205159.jpg"
+            alt='Pack The Bag album cover'
+            className={classes.albumCover}
+          />
           <span style={{ fontWeight: 900 }}>
-            New Album{" "}
-            <a
-              href="https://ada.lnk.to/_hanginin"
-              className={classes.link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              "Hangin' In"
-            </a>{" "}
-            out now! Click to listen!
+            New Album "Pack The Bag" out Nov 20th!
           </span>
         </Alert>
       </Snackbar>

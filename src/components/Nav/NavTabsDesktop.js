@@ -106,8 +106,7 @@ const NavTabsDesktop = () => {
                   key={item.id}
                 >
                   {item.children.map((childItem) =>
-                    childItem.page === "Joan Fort EPK" ||
-                    childItem.page === "The Dam Jawn EPK" ? (
+                    childItem.link.endsWith(".pdf") ? (
                       <a
                         href={childItem.link}
                         target="_blank"
@@ -159,7 +158,7 @@ const NavTabsDesktop = () => {
                           </Typography>
                         </MenuItem>
                       </Link>
-                    )
+                    ),
                   )}
                 </Menu>
               )}
