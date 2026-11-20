@@ -76,14 +76,21 @@ const Home = () => {
             </>
           }
         >
-          <img
-            src="/Portada%20FSR%205159.jpg"
-            alt='Pack The Bag album cover'
-            className={classes.albumCover}
-          />
-          <span style={{ fontWeight: 900 }}>
-            New Album "Pack The Bag" out Nov 20th!
-          </span>
+          <a
+            href="https://orcd.co/jfort_packthebag"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.link}
+          >
+            <img
+              src="/Portada%20FSR%205159.jpg"
+              alt="Pack The Bag album cover"
+              className={classes.albumCover}
+            />
+            <span style={{ display: "block", fontWeight: 900 }}>
+              New album out now — click to listen
+            </span>
+          </a>
         </Alert>
       </Snackbar>
       <Container

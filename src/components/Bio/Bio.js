@@ -17,8 +17,7 @@ import {
 
 import { Bounce } from "react-awesome-reveal";
 import makeStyles from "./styles";
-import joan7 from "../../images/joan7.jpg";
-// import martin6small from "../../images/compressed/martin6small.jpg";
+import joan7 from "../../images/Bio.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { Helmet } from "react-helmet-async";
@@ -58,10 +57,10 @@ const Bio = () => {
               {language === "en"
                 ? en?.title?.toUpperCase()
                 : language === "ca"
-                ? ca?.title?.toUpperCase()
-                : language === "nl"
-                ? nl?.title?.toUpperCase()
-                : es?.title?.toUpperCase()}
+                  ? ca?.title?.toUpperCase()
+                  : language === "nl"
+                    ? nl?.title?.toUpperCase()
+                    : es?.title?.toUpperCase()}
             </Bounce>
           </Typography>
           <Divider
@@ -85,7 +84,7 @@ const Bio = () => {
                 className={classes.images}
                 src={joan7}
                 effect="blur"
-                alt="martin"
+                alt="Joan Fort"
               />
             </Grid>
             <Grid item xs={12} md={6} sx={{ zIndex: 1 }}>
@@ -129,10 +128,10 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio1
                   : language === "ca"
-                  ? ca?.bio1
-                  : language === "nl"
-                  ? nl?.bio1
-                  : es?.bio1}
+                    ? ca?.bio1
+                    : language === "nl"
+                      ? nl?.bio1
+                      : es?.bio1}
               </Typography>
               <Typography
                 variant="body2"
@@ -143,10 +142,10 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio2
                   : language === "ca"
-                  ? ca?.bio2
-                  : language === "nl"
-                  ? nl?.bio2
-                  : es?.bio2}
+                    ? ca?.bio2
+                    : language === "nl"
+                      ? nl?.bio2
+                      : es?.bio2}
               </Typography>
               <Typography
                 variant="body2"
@@ -157,10 +156,10 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio3
                   : language === "ca"
-                  ? ca?.bio3
-                  : language === "nl"
-                  ? nl?.bio3
-                  : es?.bio3}
+                    ? ca?.bio3
+                    : language === "nl"
+                      ? nl?.bio3
+                      : es?.bio3}
               </Typography>
               <Typography
                 variant="body2"
@@ -171,10 +170,10 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio4
                   : language === "ca"
-                  ? ca?.bio4
-                  : language === "nl"
-                  ? nl?.bio4
-                  : es?.bio4}
+                    ? ca?.bio4
+                    : language === "nl"
+                      ? nl?.bio4
+                      : es?.bio4}
               </Typography>
               <Typography
                 variant="body2"
@@ -185,10 +184,10 @@ const Bio = () => {
                 {language === "en"
                   ? en?.bio5
                   : language === "ca"
-                  ? ca?.bio5
-                  : language === "nl"
-                  ? nl?.bio5
-                  : es?.bio5}
+                    ? ca?.bio5
+                    : language === "nl"
+                      ? nl?.bio5
+                      : es?.bio5}
               </Typography>
               {/* <Typography
                 variant="body2"

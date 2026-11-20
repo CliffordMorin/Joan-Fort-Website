@@ -66,6 +66,17 @@ const Discography = () => {
                 As Leader:
               </Typography>
               <iframe
+                title="Pack The Bag"
+                className={classes.iframe}
+                src="https://open.spotify.com/embed/album/21gyZXQXYqGiAUFWjBpEl6?utm_source=generator&si=6e2c9b24a5054d26"
+                width="95%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+              <iframe
                 title="Hangin' In"
                 className={classes.iframe}
                 src="https://open.spotify.com/embed/album/5CXVVpIQ2xuVeNTivgWdgi?utm_source=generator"
@@ -136,17 +147,6 @@ const Discography = () => {
                 title="Too Soon, Too Late"
                 className={classes.iframe}
                 src="https://open.spotify.com/embed/album/6qOw3DbtAGf2i4zN7fCO9B?utm_source=generator"
-                width="95%"
-                height="352"
-                frameBorder="0"
-                allowFullScreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-              ></iframe>
-              <iframe
-                title="The Lamp Is Low"
-                className={classes.iframe}
-                src="https://open.spotify.com/embed/album/544zydzZfrmAMQLWTCOvyZ?utm_source=generator"
                 width="95%"
                 height="352"
                 frameBorder="0"
